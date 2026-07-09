@@ -1,0 +1,15 @@
+# Datos generados / privados: nunca deben subirse al repo
+backend/salidas/
+backend/informes.db
+backend/_uploads/
+backend/_work/
+backend/_build_tmp/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Sistema
+.DS_Store

@@ -1,0 +1,6 @@
+backend/salidas/*
+backend/informes.db
+backend/_uploads/
+backend/_work/
+__pycache__/
+*.pyc

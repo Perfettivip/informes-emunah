@@ -1,0 +1,3403 @@
+<?xml version="1.0" encoding="UTF-8"?><w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16sdtfl="http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:w16du="http://schemas.microsoft.com/office/word/2023/wordml/word16du" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh w16sdtfl w16du wp14">
+  <w:body>
+    <w:p w14:paraId="3586FAC0" w14:textId="77777777" w:rsidR="006B2958" w:rsidRDefault="006B2958" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="164E6E12" w14:textId="77777777" w:rsidR="006B2958" w:rsidRDefault="006B2958" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="59E1659B" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRPr="00203270" w:rsidRDefault="001A42C0" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Bogotá, {{FECHA_CARTA}}.</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="3703C692" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRPr="00203270" w:rsidRDefault="00D60ABF" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="right"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="26E5B205" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRPr="00203270" w:rsidRDefault="001A42C0" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="right"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>{{NUM_INFORME}}</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="54EB41A2" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRDefault="00D60ABF" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="6041B931" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRPr="00203270" w:rsidRDefault="00D60ABF" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="546A88BB" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRPr="00203270" w:rsidRDefault="00D60ABF" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Señores</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="160C5869" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRPr="000A626F" w:rsidRDefault="004838BD" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="it-IT"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="it-IT"/>
+        </w:rPr>
+        <w:t>{{EMPRESA}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="72A86BE3" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRPr="000A626F" w:rsidRDefault="00D60ABF" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="it-IT"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="it-IT"/>
+        </w:rPr>
+        <w:t>Atte. {{CONTACTO}}</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="423FE910" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRPr="00203270" w:rsidRDefault="002124FB" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>{{CARGO_CONTACTO}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="28DCDF8F" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRPr="00203270" w:rsidRDefault="002124FB" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Ciudad. -</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3C793522" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRPr="00203270" w:rsidRDefault="00D60ABF" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="10F83E6F" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRDefault="00D60ABF" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1E7FDD13" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRPr="00203270" w:rsidRDefault="00D60ABF" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2A50F6F3" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRDefault="002124FB" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Ref.: Informe mantenimiento Preventivo mes de {{MES_REF}}.</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="7F1E81F8" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRDefault="00D60ABF" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="506D020D" w14:textId="77777777" w:rsidR="006B2958" w:rsidRPr="00203270" w:rsidRDefault="006B2958" w:rsidP="00D60ABF">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="00F4896A" w14:textId="77777777" w:rsidR="00D60ABF" w:rsidRDefault="00D60ABF" w:rsidP="002124FB">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Como es de su conocimiento y de acuerdo con nuestra reunión me permito presentar informe de los trabajos realizados.</w:t>
+      </w:r>
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="40484F12" w14:textId="77777777" w:rsidR="00D94B8D" w:rsidRDefault="00D94B8D" w:rsidP="002124FB">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="310E3BC9" w14:textId="77777777" w:rsidR="002124FB" w:rsidRDefault="002124FB" w:rsidP="002124FB">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>{{PARRAFO_INTRO}}</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="0A184F96" w14:textId="77777777" w:rsidR="002124FB" w:rsidRDefault="002124FB" w:rsidP="002124FB">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="61B1DE7E" w14:textId="77777777" w:rsidR="006B2958" w:rsidRDefault="006B2958" w:rsidP="002124FB">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7FB18008" w14:textId="77777777" w:rsidR="002124FB" w:rsidRDefault="002124FB" w:rsidP="002124FB">
+      <w:pPr>
+        <w:pStyle w:val="Prrafodelista"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="es-CO"/>
+        </w:rPr>
+        <w:t>{{OBS1}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5789A133" w14:textId="77777777" w:rsidR="0069734C" w:rsidRDefault="0069734C" w:rsidP="002124FB">
+      <w:pPr>
+        <w:pStyle w:val="Prrafodelista"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="es-CO"/>
+        </w:rPr>
+        <w:t>{{OBS2}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="55FA09C0" w14:textId="77777777" w:rsidR="0069734C" w:rsidRDefault="0069734C" w:rsidP="002124FB">
+      <w:pPr>
+        <w:pStyle w:val="Prrafodelista"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="es-CO"/>
+        </w:rPr>
+        <w:t>{{OBS3}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7454FDFD" w14:textId="77777777" w:rsidR="002124FB" w:rsidRDefault="002124FB" w:rsidP="002124FB">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7BA0BAAF" w14:textId="77777777" w:rsidR="006B2958" w:rsidRDefault="006B2958" w:rsidP="002124FB">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="6026BB71" w14:textId="77777777" w:rsidR="002124FB" w:rsidRDefault="002124FB" w:rsidP="002124FB">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="48F1BF3C" w14:textId="77777777" w:rsidR="002124FB" w:rsidRPr="002124FB" w:rsidRDefault="002124FB" w:rsidP="002124FB">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:b/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:b/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>TRABAJOS EFECTUADOS</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7D422AD3" w14:textId="77777777" w:rsidR="002124FB" w:rsidRDefault="002124FB" w:rsidP="002124FB">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="6E71CC2C" w14:textId="77777777" w:rsidR="002124FB" w:rsidRDefault="002124FB" w:rsidP="002124FB">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="11"/>
+        </w:numPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>{{TRABAJO1}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1EB2A700" w14:textId="77777777" w:rsidR="003F6208" w:rsidRDefault="003F6208" w:rsidP="002124FB">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="11"/>
+        </w:numPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>{{TRABAJO2}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="46BD7DF2" w14:textId="77777777" w:rsidR="006B2958" w:rsidRDefault="006B2958" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="6E9589AC" w14:textId="77777777" w:rsidR="006B2958" w:rsidRDefault="006B2958" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="79CF86BD" w14:textId="77777777" w:rsidR="000A626F" w:rsidRDefault="000A626F" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2970F939" w14:textId="77777777" w:rsidR="006B2958" w:rsidRDefault="006B2958" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="6E15BD38" w14:textId="77777777" w:rsidR="008A50F6" w:rsidRPr="00235A84" w:rsidRDefault="008A50F6" w:rsidP="008A50F6">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:noProof/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:noProof/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>UNIDADES EXTERNAS CONDENSADORAS</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5309126A" w14:textId="77777777" w:rsidR="008A50F6" w:rsidRDefault="008A50F6" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1E145D21" w14:textId="77777777" w:rsidR="00B05049" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+        <w:pict w14:anchorId="5702C4C2">
+          <v:rect id="_x0000_s2083" alt="" style="position:absolute;left:0;text-align:left;margin-left:300.75pt;margin-top:98.8pt;width:163.2pt;height:96pt;z-index:251651072;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="4490FF19" w14:textId="77777777" w:rsidR="00235A84" w:rsidRPr="00235A84" w:rsidRDefault="00235A84" w:rsidP="00235A84">
+                  <w:pPr>
+                    <w:jc w:val="both"/>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                    <w:t>{{CAP1}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict>
+      <w:pict w14:anchorId="71434EA1">
+          <v:shapetype id="_x0000_t32" coordsize="21600,21600" o:spt="32" o:oned="t" path="m,l21600,21600e" filled="f">
+            <v:path arrowok="t" fillok="f" o:connecttype="none"/>
+            <o:lock v:ext="edit" shapetype="t"/>
+          </v:shapetype>
+          <v:shape id="_x0000_s2082" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:167.55pt;margin-top:139.6pt;width:127.2pt;height:1.8pt;flip:y;z-index:251650048;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:pict w14:anchorId="3A413B55">
+          <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+            <v:stroke joinstyle="miter"/>
+            <v:formulas>
+              <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+              <v:f eqn="sum @0 1 0"/>
+              <v:f eqn="sum 0 0 @1"/>
+              <v:f eqn="prod @2 1 2"/>
+              <v:f eqn="prod @3 21600 pixelWidth"/>
+              <v:f eqn="prod @3 21600 pixelHeight"/>
+              <v:f eqn="sum @0 0 1"/>
+              <v:f eqn="prod @6 1 2"/>
+              <v:f eqn="prod @7 21600 pixelWidth"/>
+              <v:f eqn="sum @8 21600 0"/>
+              <v:f eqn="prod @7 21600 pixelHeight"/>
+              <v:f eqn="sum @10 21600 0"/>
+            </v:formulas>
+            <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+            <o:lock v:ext="edit" aspectratio="t"/>
+          </v:shapetype>
+          <v:shape id="_x0000_i1041" type="#_x0000_t75" alt="" style="width:188.05pt;height:244.8pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId8" o:title=""/>
+          </v:shape>
+        </w:pict>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0E456EB1" w14:textId="77777777" w:rsidR="008A50F6" w:rsidRDefault="008A50F6" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="18B43C84" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="0094420B" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="558260FA" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:pict w14:anchorId="6E59D246">
+          <v:rect id="_x0000_s2081" alt="" style="position:absolute;left:0;text-align:left;margin-left:293.6pt;margin-top:105.7pt;width:179.7pt;height:83.55pt;z-index:251640832;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="0B300F68" w14:textId="77777777" w:rsidR="0094420B" w:rsidRPr="007F5C6C" w:rsidRDefault="0094420B" w:rsidP="0094420B">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-ES"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-ES"/>
+                    </w:rPr>
+                    <w:t>{{CAP2}}</w:t>
+                  </w:r>
+                  
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+        <w:pict w14:anchorId="2FDC4ECF">
+          <v:shape id="_x0000_s2080" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:145.35pt;margin-top:129.7pt;width:141pt;height:13.2pt;flip:y;z-index:251641856;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="#f2f2f2" strokeweight="3pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" type="perspective" color="#7f7f7f" opacity=".5" offset="1pt" offset2="-1pt"/>
+          </v:shape>
+        </w:pict>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:pict w14:anchorId="5E8FA500">
+          <v:shape id="_x0000_i1040" type="#_x0000_t75" alt="" style="width:203.3pt;height:258.35pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId9" o:title=""/>
+          </v:shape>
+        </w:pict>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="05CF4C89" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="0094420B" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7CB7E4F4" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="0094420B" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="35D765E5" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="0094420B" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="236CC268" w14:textId="77777777" w:rsidR="00AE6D65" w:rsidRDefault="00AE6D65" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1E6ADCCF" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="04A5C08D" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="65D8A269" w14:textId="77777777" w:rsidR="00AE6D65" w:rsidRDefault="00AE6D65" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="42DB7108" w14:textId="77777777" w:rsidR="00AE6D65" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:pict w14:anchorId="503C6DF3">
+          <v:shape id="_x0000_s2079" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:151.35pt;margin-top:125.7pt;width:101.4pt;height:.6pt;z-index:251653120;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict>
+      <w:pict w14:anchorId="2CDB410A">
+          <v:rect id="_x0000_s2078" alt="" style="position:absolute;left:0;text-align:left;margin-left:282.15pt;margin-top:74.7pt;width:175.2pt;height:106.2pt;z-index:251652096;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="1F0A1EBC" w14:textId="77777777" w:rsidR="00235A84" w:rsidRPr="00235A84" w:rsidRDefault="00235A84">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                    <w:t>{{CAP3}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict><w:pict w14:anchorId="50FB24A3">
+          <v:shape id="_x0000_i1039" type="#_x0000_t75" alt="" style="width:186.35pt;height:244.8pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId10" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="778C2668" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="56AA5034" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5ED3AE6F" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="79D7C677" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="65E5C3E1" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3A988A4C" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="0094420B" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="08FE4D3F" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="0094420B" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1EE60FE1" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="0094420B" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7AFBE1BB" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2C0FCF93" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="759B11FE" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="590E2413" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="0E8ACED6" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7E2DAABA" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="38FB8A3F" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="24F36349" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2834BD8A" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="0A581EB1" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="719E31AF" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5CE4E80E" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="54A74710" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:pict w14:anchorId="3928B75F">
+          <v:shape id="_x0000_s2077" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:138.75pt;margin-top:115.3pt;width:118.2pt;height:1.8pt;flip:y;z-index:251655168;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict>
+      <w:pict w14:anchorId="5B62FC60">
+          <v:rect id="_x0000_s2076" alt="" style="position:absolute;left:0;text-align:left;margin-left:274.95pt;margin-top:70.3pt;width:182.4pt;height:83.4pt;z-index:251654144;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="431E0FA3" w14:textId="77777777" w:rsidR="00235A84" w:rsidRPr="00235A84" w:rsidRDefault="00235A84">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                    <w:t>{{CAP4}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict><w:pict w14:anchorId="5A77C93D">
+          <v:shape id="_x0000_i1038" type="#_x0000_t75" alt="" style="width:177.9pt;height:221.1pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId11" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="305E12D2" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2404CC3F" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="671C4B13" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:pict w14:anchorId="6FEF78E2">
+          <v:rect id="_x0000_s2075" alt="" style="position:absolute;left:0;text-align:left;margin-left:301.35pt;margin-top:55.1pt;width:177pt;height:103.2pt;z-index:251656192;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="13F046D9" w14:textId="77777777" w:rsidR="00235A84" w:rsidRDefault="00235A84">
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                    <w:t>{{CAP5}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict>
+      <w:pict w14:anchorId="0224A84A">
+          <v:shape id="_x0000_s2074" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:134.55pt;margin-top:107.35pt;width:148.2pt;height:.6pt;flip:y;z-index:251648000;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict><w:pict w14:anchorId="67261380">
+          <v:shape id="_x0000_i1037" type="#_x0000_t75" alt="" style="width:182.1pt;height:232.1pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId12" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="43790EF7" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="163FE543" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2C4AF26A" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="52429364" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00534B5C" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="3348"/>
+        </w:tabs>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:tab/>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5F1D36B9" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7EC93769" w14:textId="77777777" w:rsidR="00704846" w:rsidRDefault="00704846" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="085FC00B" w14:textId="77777777" w:rsidR="00B05049" w:rsidRDefault="00B05049" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5C571413" w14:textId="77777777" w:rsidR="00525958" w:rsidRDefault="00525958" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="13AA11F2" w14:textId="77777777" w:rsidR="00525958" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+        <w:pict w14:anchorId="4D8C8CBE">
+          <v:shape id="_x0000_s2073" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:125.55pt;margin-top:79.3pt;width:121.2pt;height:.6pt;z-index:251658240;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict>
+      <w:pict w14:anchorId="11136B75">
+          <v:rect id="_x0000_s2072" alt="" style="position:absolute;left:0;text-align:left;margin-left:274.35pt;margin-top:63.1pt;width:190.2pt;height:89.4pt;z-index:251657216;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="78475E0E" w14:textId="77777777" w:rsidR="00E15388" w:rsidRPr="00E15388" w:rsidRDefault="00E15388">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                    <w:t>{{CAP6}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict><w:pict w14:anchorId="3C91EEAF">
+          <v:shape id="_x0000_i1036" type="#_x0000_t75" alt="" style="width:200.75pt;height:277.85pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId13" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="7E7F19BF" w14:textId="77777777" w:rsidR="00235A84" w:rsidRDefault="00235A84" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="6D0BB45D" w14:textId="77777777" w:rsidR="00235A84" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:pict w14:anchorId="0217480A">
+          <v:shape id="_x0000_s2071" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:130.95pt;margin-top:95.6pt;width:139.8pt;height:2.4pt;flip:y;z-index:251660288;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict>
+      <w:pict w14:anchorId="73AA966C">
+          <v:rect id="_x0000_s2070" alt="" style="position:absolute;left:0;text-align:left;margin-left:284.55pt;margin-top:61.4pt;width:181.2pt;height:100.2pt;z-index:251659264;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="6E881956" w14:textId="77777777" w:rsidR="00E15388" w:rsidRPr="00E15388" w:rsidRDefault="00E15388">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                    <w:t>{{CAP7}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict><w:pict w14:anchorId="5C49D2EF">
+          <v:shape id="_x0000_i1035" type="#_x0000_t75" alt="" style="width:202.45pt;height:240.55pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId14" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="751336EA" w14:textId="77777777" w:rsidR="00235A84" w:rsidRDefault="00235A84" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7D2E94D5" w14:textId="77777777" w:rsidR="00235A84" w:rsidRDefault="00235A84" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7F10A9E2" w14:textId="77777777" w:rsidR="00235A84" w:rsidRDefault="00235A84" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3D5242B4" w14:textId="77777777" w:rsidR="00235A84" w:rsidRDefault="00235A84" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="17D5DA1F" w14:textId="77777777" w:rsidR="00235A84" w:rsidRDefault="00235A84" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="021D8BDE" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="003217BF" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="428B6464" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+        <w:pict w14:anchorId="1EA15C40">
+          <v:rect id="_x0000_s2069" alt="" style="position:absolute;left:0;text-align:left;margin-left:276.35pt;margin-top:64.55pt;width:195pt;height:95.25pt;z-index:251642880;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="32FB7C72" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="003217BF" w:rsidP="008A4F66">
+                  <w:pPr>
+                    <w:jc w:val="both"/>
+                    <w:rPr>
+                      <w:lang w:val="es-ES"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-ES"/>
+                    </w:rPr>
+                    <w:t>{{CAP8}}</w:t>
+                  </w:r>
+                  
+                </w:p>
+                <w:p w14:paraId="74E1E346" w14:textId="77777777" w:rsidR="003217BF" w:rsidRPr="007F5C6C" w:rsidRDefault="003217BF" w:rsidP="003217BF">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-ES"/>
+                    </w:rPr>
+                  </w:pPr>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict>
+      <w:pict w14:anchorId="352126C1">
+          <v:shape id="_x0000_s2068" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:132.15pt;margin-top:67.65pt;width:121.8pt;height:25.2pt;z-index:251649024;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:pict w14:anchorId="55241818">
+          <v:shape id="_x0000_i1034" type="#_x0000_t75" alt="" style="width:199.05pt;height:251.6pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId15" o:title=""/>
+          </v:shape>
+        </w:pict>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="789738A1" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="003217BF" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5C646356" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1243B4D5" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:pict w14:anchorId="59D6D97B">
+          <v:shape id="_x0000_s2067" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:145.95pt;margin-top:122.2pt;width:106.2pt;height:.6pt;z-index:251662336;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict>
+      <w:pict w14:anchorId="0A0B21C1">
+          <v:rect id="_x0000_s2066" alt="" style="position:absolute;left:0;text-align:left;margin-left:269.55pt;margin-top:71.2pt;width:191.4pt;height:99pt;z-index:251661312;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="543C72E5" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRPr="008A4F66" w:rsidRDefault="008A4F66">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                    <w:t>{{CAP9}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict><w:pict w14:anchorId="13CADC59">
+          <v:shape id="_x0000_i1033" type="#_x0000_t75" alt="" style="width:208.4pt;height:249.05pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId16" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="4A7D1A02" w14:textId="77777777" w:rsidR="00B05049" w:rsidRDefault="00B05049" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3C5B9545" w14:textId="77777777" w:rsidR="00B05049" w:rsidRDefault="00B05049" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="207A4A0A" w14:textId="77777777" w:rsidR="00B05049" w:rsidRDefault="00B05049" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="0E773089" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="0094420B" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="0D8DB584" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="0094420B" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="10792FD8" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:pict w14:anchorId="1D2AFADC">
+          <v:shape id="_x0000_s2065" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:125.55pt;margin-top:127pt;width:135pt;height:.6pt;z-index:251664384;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict>
+      <w:pict w14:anchorId="77491631">
+          <v:rect id="_x0000_s2064" alt="" style="position:absolute;left:0;text-align:left;margin-left:282.15pt;margin-top:67.6pt;width:184.2pt;height:95.4pt;z-index:251663360;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="507C5FAF" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRPr="008A4F66" w:rsidRDefault="008A4F66">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                    <w:t>{{CAP10}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict><w:pict w14:anchorId="2D24A5BD">
+          <v:shape id="_x0000_i1032" type="#_x0000_t75" alt="" style="width:193.15pt;height:245.65pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId17" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="142D2F5D" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="247EB79D" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:pict w14:anchorId="06651406">
+          <v:shape id="_x0000_s2063" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:133.35pt;margin-top:100.55pt;width:140.4pt;height:2.4pt;flip:y;z-index:251666432;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict>
+      <w:pict w14:anchorId="7F3B9FFC">
+          <v:rect id="_x0000_s2062" alt="" style="position:absolute;left:0;text-align:left;margin-left:288.75pt;margin-top:59.15pt;width:196.8pt;height:93pt;z-index:251665408;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="2CDE302B" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRPr="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="008A4F66">
+                  <w:pPr>
+                    <w:jc w:val="both"/>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                    <w:t>{{CAP11}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict><w:pict w14:anchorId="7E48E83A">
+          <v:shape id="_x0000_i1031" type="#_x0000_t75" alt="" style="width:187.2pt;height:245.65pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId18" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="2C56B7AF" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="0094420B" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="15D19084" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="23A1C690" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="104B350B" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="303E9959" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="6C8DC791" w14:textId="77777777" w:rsidR="00B05049" w:rsidRDefault="00B05049" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="162DF685" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+        <w:pict w14:anchorId="26C71831">
+          <v:shape id="_x0000_s2061" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:124.35pt;margin-top:118.45pt;width:150.6pt;height:.6pt;z-index:251668480;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict>
+      <w:pict w14:anchorId="4BB2D3F1">
+          <v:rect id="_x0000_s2060" alt="" style="position:absolute;left:0;text-align:left;margin-left:289.35pt;margin-top:57.25pt;width:200.4pt;height:98.4pt;z-index:251667456;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="60A260FF" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRPr="008A4F66" w:rsidRDefault="008A4F66">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                    <w:t>{{CAP12}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict><w:pict w14:anchorId="7927AC11">
+          <v:shape id="_x0000_i1030" type="#_x0000_t75" alt="" style="width:197.35pt;height:254.1pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId19" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="7C5714EB" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="33CA7BF3" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7A01E76D" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="003217BF" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="36182BBF" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:pict w14:anchorId="6AFCB069">
+          <v:shape id="_x0000_s2059" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:131.55pt;margin-top:139.95pt;width:131.4pt;height:1.2pt;z-index:251670528;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict>
+      <w:pict w14:anchorId="47EB847E">
+          <v:rect id="_x0000_s2058" alt="" style="position:absolute;left:0;text-align:left;margin-left:277.95pt;margin-top:60.15pt;width:206.4pt;height:133.8pt;z-index:251669504;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="743AC987" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRPr="008A4F66" w:rsidRDefault="008A4F66">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                    <w:t>{{CAP13}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict><w:pict w14:anchorId="757BAA8C">
+          <v:shape id="_x0000_i1029" type="#_x0000_t75" alt="" style="width:199.9pt;height:253.25pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId20" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="58530E7C" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="003217BF" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="055F8B8F" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3D799EA1" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7DC74A5F" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="617D0E14" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="159200F1" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1D3AD1B4" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRDefault="008A4F66" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="748BAA0C" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:pict w14:anchorId="1BC3B957">
+          <v:shape id="_x0000_s2057" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:233.55pt;margin-top:74.55pt;width:81.6pt;height:0;z-index:251672576;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict>
+      <w:pict w14:anchorId="0D701DFD">
+          <v:rect id="_x0000_s2056" alt="" style="position:absolute;left:0;text-align:left;margin-left:331.95pt;margin-top:43.35pt;width:139.8pt;height:83.4pt;z-index:251671552;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="049CE0E2" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRPr="008A4F66" w:rsidRDefault="008A4F66">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                    <w:t>{{CAP14}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict><w:pict w14:anchorId="4C004350">
+          <v:shape id="_x0000_i1028" type="#_x0000_t75" alt="" style="width:226.15pt;height:160.1pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId21" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="2D078F63" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="003217BF" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="16149A91" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="003217BF" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2F7A58BC" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="003217BF" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="03AAF6A6" w14:textId="77777777" w:rsidR="003217BF" w:rsidRDefault="003217BF" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="50C4E352" w14:textId="77777777" w:rsidR="00534B5C" w:rsidRDefault="00534B5C" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2C51904A" w14:textId="77777777" w:rsidR="00136621" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+        <w:pict w14:anchorId="59F65315">
+          <v:shape id="_x0000_s2055" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:196.95pt;margin-top:91.2pt;width:99.6pt;height:.6pt;flip:y;z-index:251674624;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="red" strokeweight="2pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+          </v:shape>
+        </w:pict>
+      <w:pict w14:anchorId="33705F03">
+          <v:rect id="_x0000_s2054" alt="" style="position:absolute;left:0;text-align:left;margin-left:315.75pt;margin-top:49.2pt;width:167.4pt;height:75.6pt;z-index:251673600;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="72C6C777" w14:textId="77777777" w:rsidR="008A4F66" w:rsidRPr="008A4F66" w:rsidRDefault="008A4F66">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-MX"/>
+                    </w:rPr>
+                    <w:t>{{CAP15}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict><w:t xml:space="preserve"> </w:t><w:pict w14:anchorId="74691934">
+          <v:shape id="_x0000_i1027" type="#_x0000_t75" alt="" style="width:237.2pt;height:171.95pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId22" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="50193602" w14:textId="77777777" w:rsidR="00136621" w:rsidRDefault="00136621" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7239BD5F" w14:textId="77777777" w:rsidR="00136621" w:rsidRDefault="00136621" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2C22CCC4" w14:textId="77777777" w:rsidR="00136621" w:rsidRDefault="00136621" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="4E163A38" w14:textId="77777777" w:rsidR="00136621" w:rsidRDefault="00136621" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="45C446F7" w14:textId="77777777" w:rsidR="00136621" w:rsidRDefault="00136621" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="15E35CA8" w14:textId="77777777" w:rsidR="00136621" w:rsidRDefault="00136621" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="4E665439" w14:textId="77777777" w:rsidR="00136621" w:rsidRDefault="00136621" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="46B9FB94" w14:textId="77777777" w:rsidR="00136621" w:rsidRDefault="00136621" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="67F533AE" w14:textId="77777777" w:rsidR="00136621" w:rsidRDefault="00136621" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="44CC8F06" w14:textId="77777777" w:rsidR="00334243" w:rsidRDefault="00334243" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7697B9D6" w14:textId="77777777" w:rsidR="00B05049" w:rsidRDefault="00B05049" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="35C12CB8" w14:textId="77777777" w:rsidR="00B05049" w:rsidRPr="00534B5C" w:rsidRDefault="0094420B" w:rsidP="00DA3E46">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:u w:val="single"/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:u w:val="single"/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>OBSERVACIONES</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4EDD70ED" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="0094420B" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="20420506" w14:textId="77777777" w:rsidR="00DA3E46" w:rsidRDefault="00DA3E46" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1FC77140" w14:textId="77777777" w:rsidR="00DA3E46" w:rsidRPr="005B69D7" w:rsidRDefault="00DA3E46" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="14"/>
+        </w:numPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Limpieza, verificación y purga de desagües.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="41507553" w14:textId="77777777" w:rsidR="00DA3E46" w:rsidRPr="005B69D7" w:rsidRDefault="00DA3E46" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="14"/>
+        </w:numPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Limpieza y revisión bandeja de condensados.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="46B1B929" w14:textId="77777777" w:rsidR="00DA3E46" w:rsidRPr="00DA3E46" w:rsidRDefault="00DA3E46" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="14"/>
+        </w:numPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Toma de tensión y corriente.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2B1922BA" w14:textId="77777777" w:rsidR="00DA3E46" w:rsidRDefault="00DA3E46" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="14"/>
+        </w:numPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+        <w:t>Se realiza medicion de presiones en sistema VRV Daikin.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7E560252" w14:textId="77777777" w:rsidR="00DA3E46" w:rsidRDefault="00FF32BC" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="14"/>
+        </w:numPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Se realizo recalibración de termostatos por desprogramación.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="44A4124D" w14:textId="77777777" w:rsidR="00B05049" w:rsidRPr="00E957AC" w:rsidRDefault="00FF32BC" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="14"/>
+        </w:numPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Se realiza pruebas de enfriamiento con pistola Laser evidenciando capacidad de enfriamiento optima en las diferentes áreas.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="655F003E" w14:textId="77777777" w:rsidR="00334243" w:rsidRPr="00E957AC" w:rsidRDefault="00334243" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="14"/>
+        </w:numPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">El Datacenter se encuentra operando normalmente equipo No. 2, el equipo No. 1 se encuentra fuera de servicio.  Sin novedad.  </w:t>
+      </w:r>
+      
+      
+      
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>(ES MUY URGENTE REMPLAZO DEL EQUIPO QUE SE ENCUENTRA FUERA DE SERVICIO.</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:color w:val="FF0000"/>
+        </w:rPr>
+        <w:t>)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0899366D" w14:textId="77777777" w:rsidR="007D0675" w:rsidRPr="00E957AC" w:rsidRDefault="007D0675" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="14"/>
+        </w:numPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:color w:val="FF0000"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Se requiere pegar algunos conductos que por uso y fricción se han despegado.  </w:t>
+      </w:r>
+      
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>(PRIORIZAR ARREGLO DE CONDUCTOS RIESGO DE OFICINAS CON DEFICIENCIA DE SUMINISTRO DE AIRE ACONDICIONADO COMO SE VE EN LAS FOTOS.)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="78C99649" w14:textId="77777777" w:rsidR="00534B5C" w:rsidRPr="00AC5A33" w:rsidRDefault="00534B5C" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="14"/>
+        </w:numPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:color w:val="FF0000"/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Se encuentran las Unidades condensadoras golpeadas con un alto riesgo de roturas en los serpentines de condensación por golpes y caídas de objetos con punta metálica rígida</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>.  (SE RECOMIENDA HACER PEINADO DE SERPENTINES DE UNIDADES CONDENSADORAS.)</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="6897728B" w14:textId="77777777" w:rsidR="00534B5C" w:rsidRPr="00AC5A33" w:rsidRDefault="00534B5C" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="14"/>
+        </w:numPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Se encuentran daños por uso de los conductos de A.A. despegados y con cintas levantadas, pero se requiere revisión y levantamiento con un Ductero para determinar los trabajos a ejecutar.  </w:t>
+      </w:r>
+      
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>(PRIORIZAR ESTAS ACTIVIDADES).</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="15121A49" w14:textId="77777777" w:rsidR="00AC5A33" w:rsidRPr="007D0675" w:rsidRDefault="00AC5A33" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="14"/>
+        </w:numPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Se deben remplazar 2 bombas de condensado de unidades internas de 1 vía por daño en operación, de igual manera se recomienda hacer la instalación de los cheques de bloqueo de paso de agua de los drenajes de aguas lluvias.  </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>(Puede evitar emergencias de operación en equipos.)</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="7287298C" w14:textId="77777777" w:rsidR="007D0675" w:rsidRPr="00FF32BC" w:rsidRDefault="007D0675" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:ind w:left="720"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="4651E78E" w14:textId="77777777" w:rsidR="00B05049" w:rsidRDefault="00B05049" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="4F2D0AA0" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="00534B5C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="0DFD8660" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5218DA14" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1E731CDD" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="41271DD5" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="14B03C2A" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="4800CB2F" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="617F9F31" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="780B01D3" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5951F27D" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="37D08266" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5527467D" w14:textId="77777777" w:rsidR="007D0675" w:rsidRPr="007D0675" w:rsidRDefault="007D0675" w:rsidP="007D0675">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:u w:val="single"/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:u w:val="single"/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TRABAJOS POR REALIZAR</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5EC81588" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3CEEE05E" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="33224772" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+        <w:pict w14:anchorId="1CB96CD8">
+          <v:shape id="_x0000_s2053" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:187.2pt;margin-top:92.95pt;width:120pt;height:4.5pt;z-index:251644928;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="#f2f2f2" strokeweight="3pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" type="perspective" color="#7f7f7f" opacity=".5" offset="1pt" offset2="-1pt"/>
+          </v:shape>
+        </w:pict>
+      <w:pict w14:anchorId="709093E0">
+          <v:rect id="_x0000_s2052" alt="" style="position:absolute;left:0;text-align:left;margin-left:315.2pt;margin-top:54.05pt;width:163.5pt;height:78pt;z-index:251643904;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="5DB3191C" w14:textId="77777777" w:rsidR="007D0675" w:rsidRPr="007F5C6C" w:rsidRDefault="007D0675" w:rsidP="007D0675">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-ES"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-ES"/>
+                    </w:rPr>
+                    <w:t>{{CAP16}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict><w:pict w14:anchorId="2A5E6669">
+          <v:shape id="_x0000_i1026" type="#_x0000_t75" alt="" style="width:216.85pt;height:185.5pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId23" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="451BBD53" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="543AFBFB" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="00E45B4D" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+        <w:pict w14:anchorId="0FF00668">
+          <v:shape id="_x0000_s2051" type="#_x0000_t32" alt="" style="position:absolute;left:0;text-align:left;margin-left:124.2pt;margin-top:123.6pt;width:143.25pt;height:3.75pt;flip:y;z-index:251646976;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0" o:connectortype="straight" strokecolor="#f2f2f2" strokeweight="3pt">
+            <v:stroke endarrow="block"/>
+            <v:shadow on="t" type="perspective" color="#7f7f7f" opacity=".5" offset="1pt" offset2="-1pt"/>
+          </v:shape>
+        </w:pict>
+      <w:pict w14:anchorId="3F38E9CF">
+          <v:rect id="_x0000_s2050" alt="" style="position:absolute;left:0;text-align:left;margin-left:279.95pt;margin-top:50.95pt;width:182.25pt;height:111.75pt;z-index:251645952;mso-wrap-style:square;mso-wrap-edited:f;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0;v-text-anchor:top" strokecolor="red" strokeweight="2pt">
+            <v:shadow on="t" color="red" opacity="24903f" origin=",.5" offset="0,.55556mm"/>
+            <v:textbox>
+              <w:txbxContent>
+                <w:p w14:paraId="6ECEAB92" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="007D0675">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-ES"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-ES"/>
+                    </w:rPr>
+                    <w:t>{{CAP17A}}</w:t>
+                  </w:r>
+                </w:p>
+                <w:p w14:paraId="0998FF6C" w14:textId="77777777" w:rsidR="007D0675" w:rsidRPr="007F5C6C" w:rsidRDefault="007D0675" w:rsidP="007D0675">
+                  <w:pPr>
+                    <w:rPr>
+                      <w:lang w:val="es-ES"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:lang w:val="es-ES"/>
+                    </w:rPr>
+                    <w:t>{{CAP17B}}</w:t>
+                  </w:r>
+                </w:p>
+              </w:txbxContent>
+            </v:textbox>
+          </v:rect>
+        </w:pict><w:pict w14:anchorId="5741A2AE">
+          <v:shape id="Imagen 1" o:spid="_x0000_i1025" type="#_x0000_t75" alt="" style="width:189.75pt;height:201.6pt;visibility:visible;mso-width-percent:0;mso-height-percent:0;mso-width-percent:0;mso-height-percent:0">
+            <v:imagedata r:id="rId24" o:title=""/>
+          </v:shape>
+        </w:pict></w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="75E1BC6C" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="70067F2E" w14:textId="77777777" w:rsidR="00FF09DF" w:rsidRDefault="00FF09DF" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="444A02F8" w14:textId="77777777" w:rsidR="00FF09DF" w:rsidRDefault="00FF09DF" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="6660B64A" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="273E18B0" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1445EFAE" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5A08B496" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1B04B82F" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1F1AA6D0" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5C7E34D4" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="70BD9CDA" w14:textId="77777777" w:rsidR="007D0675" w:rsidRDefault="007D0675" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3537505B" w14:textId="77777777" w:rsidR="00534B5C" w:rsidRDefault="00534B5C" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="261281F6" w14:textId="77777777" w:rsidR="00534B5C" w:rsidRDefault="00534B5C" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:noProof/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2F10781C" w14:textId="77777777" w:rsidR="007D0675" w:rsidRPr="00E957AC" w:rsidRDefault="00E15388" w:rsidP="006B2958">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="0" w:name="_Hlk229163264"/>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>El consumo de gas refrigerante adicional en este servicio fue {{GAS_REFRIGERANTE}}.</w:t>
+      </w:r>
+    </w:p>
+    <w:bookmarkEnd w:id="0"/>
+    <w:p w14:paraId="25DC976D" w14:textId="77777777" w:rsidR="00E15388" w:rsidRDefault="00E15388" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1AA9EE7E" w14:textId="77777777" w:rsidR="00E15388" w:rsidRDefault="00E15388" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="042F0C9A" w14:textId="77777777" w:rsidR="007F5C6C" w:rsidRDefault="00FF09DF" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+        <w:t>Los equipos quedan operando sin novedad alguna y estan dentro de los parametros operacionales normales.  Se recomienda seguir con el mantenimineto peridodico programado y atender los correctivos que se presentaran el dia de mañana.</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="1C032599" w14:textId="77777777" w:rsidR="00FF32BC" w:rsidRDefault="00FF32BC" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3FC61428" w14:textId="77777777" w:rsidR="00FF32BC" w:rsidRDefault="00FF32BC" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2D001780" w14:textId="77777777" w:rsidR="007F5C6C" w:rsidRDefault="007F5C6C" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+        <w:t>Cordialmente,</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="77926296" w14:textId="77777777" w:rsidR="007F5C6C" w:rsidRDefault="007F5C6C" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="45DD1392" w14:textId="77777777" w:rsidR="00FF09DF" w:rsidRDefault="00FF09DF" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="4D44A446" w14:textId="77777777" w:rsidR="00FF09DF" w:rsidRDefault="00FF09DF" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5D5F0245" w14:textId="77777777" w:rsidR="007F5C6C" w:rsidRDefault="007F5C6C" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="20E7000A" w14:textId="77777777" w:rsidR="007F5C6C" w:rsidRDefault="007F5C6C" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="58F9337B" w14:textId="77777777" w:rsidR="007F5C6C" w:rsidRDefault="007F5C6C" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+        <w:t>SOLUCIONES EMPRESARIALES EMUNAH SAS</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6B38EA32" w14:textId="77777777" w:rsidR="007F5C6C" w:rsidRDefault="007F5C6C" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:eastAsia="es-CO"/>
+        </w:rPr>
+        <w:t>Ing. Francisco Javier Arocha R</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="017D6B51" w14:textId="77777777" w:rsidR="007F5C6C" w:rsidRPr="00E957AC" w:rsidRDefault="007F5C6C" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="en-US" w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="en-US" w:eastAsia="es-CO"/>
+        </w:rPr>
+        <w:t>Nit 900.972.833-3</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="438AAC29" w14:textId="77777777" w:rsidR="007F5C6C" w:rsidRPr="00E957AC" w:rsidRDefault="007F5C6C" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="en-US" w:eastAsia="es-CO"/>
+        </w:rPr>
+      </w:pPr>
+      <w:hyperlink r:id="rId25" w:history="1">
+        <w:r>
+          <w:rPr>
+            <w:rStyle w:val="Hipervnculo"/>
+            <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+            <w:noProof/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="es-CO"/>
+          </w:rPr>
+          <w:t>farocha@emunah.com.co</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>
+    <w:p w14:paraId="39FB8167" w14:textId="77777777" w:rsidR="007F5C6C" w:rsidRPr="00E957AC" w:rsidRDefault="00142DE0" w:rsidP="007F5C6C">
+      <w:pPr>
+        <w:spacing w:after="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+          <w:lang w:val="en-US" w:eastAsia="es-CO"/>
+        </w:rPr>
+        <w:t>Movil 3232303640</w:t>
+      </w:r>
+    </w:p>
+    <w:sectPr w:rsidR="007F5C6C" w:rsidRPr="00E957AC" w:rsidSect="007B7C43">
+      <w:headerReference w:type="even" r:id="rId26"/>
+      <w:headerReference w:type="default" r:id="rId27"/>
+      <w:footerReference w:type="even" r:id="rId28"/>
+      <w:footerReference w:type="default" r:id="rId29"/>
+      <w:headerReference w:type="first" r:id="rId30"/>
+      <w:footerReference w:type="first" r:id="rId31"/>
+      <w:pgSz w:w="12240" w:h="15840"/>
+      <w:pgMar w:top="1417" w:right="1701" w:bottom="1417" w:left="1701" w:header="708" w:footer="211" w:gutter="0"/>
+      <w:cols w:space="708"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>

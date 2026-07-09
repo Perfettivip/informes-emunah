@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informe de Mantenimiento - Soluciones EMUNAH</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Informe de Mantenimiento</h1>
+    <p class="subtitle">Soluciones EMUNAH</p>
+  </header>
+
+  <main id="app">
+    <p class="loading">Cargando formulario…</p>
+  </main>
+
+  <template id="tpl-slot">
+    <div class="slot">
+      <label class="slot-label"></label>
+      <select class="slot-frase"></select>
+      <textarea class="slot-otra" placeholder="Escribe la frase para esta foto" rows="2" style="display:none"></textarea>
+      <input type="file" accept="image/*" capture="environment" class="slot-foto" required>
+      <img class="slot-preview" style="display:none">
+    </div>
+  </template>
+
+  <script src="/app.js"></script>
+</body>
+</html>
