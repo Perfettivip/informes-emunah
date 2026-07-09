@@ -29,6 +29,7 @@ from fastapi.staticfiles import StaticFiles
 
 import catalogo
 import db
+import mailer
 from generador import generar_informe, GeneradorError, REQUIRED_PHOTOS
 
 HERE = Path(__file__).resolve().parent
@@ -182,6 +183,14 @@ async def crear_informe(
             raise HTTPException(400, str(e))
 
         db.registrar(empresa, numero, mes_ref, fecha_carta, filename)
+
+        enviado = False
+        error_envio = None
+        try:
+            mailer.enviar_informe(out_path, empresa, numero, mes_ref)
+            enviado = True
+        except mailer.MailerError as e:
+            error_envio = str(e)
     finally:
         shutil.rmtree(lote_dir, ignore_errors=True)
 
@@ -189,7 +198,8 @@ async def crear_informe(
         "ok": True,
         "numero": numero,
         "filename": filename,
-        "download_url": f"/api/download/{carpeta_segura(empresa)}/{filename}",
+        "enviado_por_correo": enviado,
+        "error_envio": error_envio,
     })
 
 

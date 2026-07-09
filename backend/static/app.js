@@ -179,7 +179,7 @@ async function cargar() {
       estadoActual = await res.json();
       numDiv.textContent = `Informe N.° ${estadoActual.proximo_numero} · consecutivo ${nombre}`;
       histDiv.innerHTML = `<h3>Últimos informes de ${escapeHtml(nombre)}</h3><ul>${
-        estadoActual.historial.map(h => `<li>N.° ${h.numero} &middot; ${escapeHtml(h.mes_ref)} &middot; <a href="${h.download_url}">${escapeHtml(h.filename)}</a></li>`).join("")
+        estadoActual.historial.map(h => `<li>N.° ${h.numero} &middot; ${escapeHtml(h.mes_ref)} &middot; enviado ✓</li>`).join("")
         || "<li>Ningún informe generado todavía para esta empresa.</li>"
       }</ul>`;
     } catch (e) {
@@ -247,11 +247,18 @@ async function enviar(data) {
     const res = await fetch("/api/informes", { method: "POST", body: fd });
     const json = await res.json();
     if (!res.ok) throw new Error(json.detail || "Error al generar el informe");
-    resultado.innerHTML = `
-      <div class="resultado ok">
-        Informe N.° ${json.numero} generado correctamente.
-        <br><a href="${json.download_url}" download>Descargar .docx</a>
-      </div>`;
+    if (json.enviado_por_correo) {
+      resultado.innerHTML = `
+        <div class="resultado ok">
+          ✅ Informe N.° ${json.numero} generado y enviado por correo.
+        </div>`;
+    } else {
+      resultado.innerHTML = `
+        <div class="resultado error">
+          El informe N.° ${json.numero} se generó, pero no se pudo enviar por correo.
+          <br>Avisa a tu supervisor: ${escapeHtml(json.error_envio || "")}
+        </div>`;
+    }
   } catch (e) {
     resultado.innerHTML = `<div class="resultado error">${escapeHtml(e.message)}</div>`;
   } finally {
