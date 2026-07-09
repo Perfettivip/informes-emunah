@@ -28,11 +28,11 @@ en la misma red, usando la IP de la Mac en vez de `localhost`).
    `informes.db` — la numeración consecutiva — se reinicie si el servicio
    se reinicia. Dado el bajo volumen mensual, es un riesgo aceptado a propósito.)
 5. **Variables de entorno** (pestaña "Environment" en Render) para que se
-   envíe el .docx por correo automáticamente:
-   - `SMTP_HOST` — ej. `mail.emunah.com.co`
-   - `SMTP_PORT` — `587`
-   - `SMTP_USER` — ej. `proyectos@emunah.com.co`
-   - `SMTP_PASSWORD` — la contraseña de ese buzón (nunca va en el código ni en git)
+   envíe el .docx por correo automáticamente. Se usa la API de SendGrid
+   (HTTPS) en vez de SMTP directo, porque el plan Free de Render bloquea
+   las conexiones SMTP salientes:
+   - `SENDGRID_API_KEY` — API key generada en https://sendgrid.com (cuenta gratis)
+   - `EMAIL_FROM` — el correo verificado como "Single Sender" en SendGrid
    - `EMAIL_TO` — a quién llega el informe (por defecto `proyectos@emunah.com.co`)
 6. Una vez desplegado, Render da una URL pública (ej. `https://informes-emunah.onrender.com`)
    — esa es la que abre el técnico desde el celular.
