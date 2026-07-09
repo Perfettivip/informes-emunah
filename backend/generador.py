@@ -65,6 +65,10 @@ def _apply_placeholders(xml_path: Path, cfg: dict):
     xml_path.write_text(text, encoding="utf-8")
 
 
+FOTO_MAX_DIM = 1000  # px, de sobra para el tamaño en que se muestran en el informe
+FOTO_JPEG_QUALITY = 78
+
+
 def _write_photos(media_dir: Path, cfg: dict):
     for foto in cfg["fotos"]:
         n = foto["n"]
@@ -73,7 +77,8 @@ def _write_photos(media_dir: Path, cfg: dict):
             raise GeneradorError(f"No existe la foto: {src}")
         im = Image.open(src)
         im = ImageOps.exif_transpose(im).convert("RGB")
-        im.save(media_dir / f"image{n}.png", "PNG")
+        im.thumbnail((FOTO_MAX_DIM, FOTO_MAX_DIM), Image.LANCZOS)
+        im.save(media_dir / f"image{n}.jpeg", "JPEG", quality=FOTO_JPEG_QUALITY, optimize=True)
 
 
 def _pack(work_dir: Path, out_path: Path):
