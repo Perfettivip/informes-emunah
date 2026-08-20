@@ -25,6 +25,15 @@ header {
 
 header h1 { margin: 0; font-size: 1.3rem; }
 .subtitle { margin: 4px 0 0; opacity: 0.85; font-size: 0.9rem; }
+.nav-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: white;
+  opacity: 0.85;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.nav-link:hover { text-decoration: underline; }
 
 main {
   max-width: 640px;

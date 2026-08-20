@@ -1,0 +1,51 @@
+.gasto-card {
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #fbfbfc;
+  position: relative;
+}
+.gasto-card .gasto-num {
+  font-weight: 600;
+  color: var(--azul);
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+.gasto-card .btn-quitar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: var(--rojo);
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+
+.btn-agregar {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  background: var(--azul-claro);
+  border: 1px dashed var(--azul);
+  color: var(--azul);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.resumen {
+  background: var(--azul-claro);
+  border: 1px solid var(--azul);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+.resumen .linea { display: flex; justify-content: space-between; padding: 3px 0; }
+.resumen .linea.total { font-weight: 700; border-top: 1px solid var(--azul); margin-top: 6px; padding-top: 8px; }
+.resumen .linea.saldo-conductor { color: #1f8a4c; font-weight: 700; }
+.resumen .linea.saldo-empresa { color: var(--rojo); font-weight: 700; }

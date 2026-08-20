@@ -22,18 +22,23 @@ import re
 import shutil
 import uuid
 from pathlib import Path
+from typing import List
 
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel
 
 import catalogo
 import db
+import flota
 import mailer
 from generador import generar_informe, GeneradorError, REQUIRED_PHOTOS
+from gastos_generador import generar_gastos, GeneradorError as GastosError, TIPOS_GASTO
 
 HERE = Path(__file__).resolve().parent
 SALIDAS_DIR = HERE / "salidas"
+GASTOS_DIR = HERE / "salidas_gastos"
 UPLOADS_DIR = HERE / "_uploads"
 WORK_DIR = HERE / "_work"
 
@@ -211,6 +216,95 @@ def descargar(carpeta: str, filename: str):
     return FileResponse(
         path,
         media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        filename=filename,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Relación de gastos en carretera
+# ---------------------------------------------------------------------------
+
+class GastoItem(BaseModel):
+    tipo: str
+    ciudad: str = ""
+    tercero: str = ""
+    cedula: str = ""
+    telefono: str = ""
+    detalle: str = ""
+    valor: float = 0
+
+
+class GastosPayload(BaseModel):
+    placa: str
+    conductor: str
+    cedula_conductor: str = ""
+    fecha_inicio: str
+    fecha_fin: str
+    km_inicial: str = ""
+    km_final: str = ""
+    origen: str = ""
+    destino: str = ""
+    manifiesto: str = ""
+    guia: str = ""
+    producto: str = ""
+    cliente: str = ""
+    barriles: str = ""
+    anticipo: float = 0
+    gastos: List[GastoItem]
+
+
+@app.get("/api/flota")
+def flota_endpoint():
+    return {"vehiculos": flota.FLOTA, "tipos_gasto": TIPOS_GASTO}
+
+
+def _nombre_archivo_gastos(placa: str, fecha_inicio: str, fecha_fin: str) -> str:
+    placa_segura = carpeta_segura(placa)
+    return f"GASTOS - {placa_segura} - {fecha_inicio} a {fecha_fin}.xlsx"
+
+
+@app.post("/api/gastos")
+def crear_gastos(payload: GastosPayload):
+    if not payload.gastos:
+        raise HTTPException(400, "Debes agregar al menos un gasto")
+
+    filename = _nombre_archivo_gastos(payload.placa, payload.fecha_inicio, payload.fecha_fin)
+    out_path = GASTOS_DIR / filename
+
+    cfg = payload.model_dump()
+    cfg["gastos"] = [g.model_dump() for g in payload.gastos]
+
+    try:
+        generar_gastos(cfg, out_path)
+    except GastosError as e:
+        raise HTTPException(400, str(e))
+
+    enviado = False
+    error_envio = None
+    try:
+        mailer.enviar_gastos(out_path, payload.placa, payload.conductor,
+                              payload.fecha_inicio, payload.fecha_fin)
+        enviado = True
+    except mailer.MailerError as e:
+        error_envio = str(e)
+
+    return JSONResponse({
+        "ok": True,
+        "filename": filename,
+        "enviado_por_correo": enviado,
+        "error_envio": error_envio,
+        "download_url": f"/api/download-gastos/{filename}",
+    })
+
+
+@app.get("/api/download-gastos/{filename}")
+def descargar_gastos(filename: str):
+    path = GASTOS_DIR / filename
+    if not path.exists():
+        raise HTTPException(404, "No existe ese archivo")
+    return FileResponse(
+        path,
+        media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         filename=filename,
     )
 

@@ -77,3 +77,52 @@ def enviar_informe(docx_path: Path, empresa: str, numero: int, mes_ref: str):
 
     if resp.status_code >= 300:
         raise MailerError(f"SendGrid respondió {resp.status_code}: {resp.text[:500]}")
+
+
+def enviar_gastos(xlsx_path: Path, placa: str, conductor: str, fecha_inicio: str, fecha_fin: str):
+    if not configurado():
+        raise MailerError(
+            "El envío de correo no está configurado (faltan SENDGRID_API_KEY/EMAIL_FROM "
+            "como variables de entorno en Render)."
+        )
+
+    api_key = os.environ["SENDGRID_API_KEY"]
+    remitente = os.environ["EMAIL_FROM"]
+    destinatario = os.environ.get("EMAIL_TO", "proyectos@emunah.com.co")
+
+    with open(xlsx_path, "rb") as f:
+        contenido_b64 = base64.b64encode(f.read()).decode("ascii")
+
+    payload = {
+        "personalizations": [{"to": [{"email": destinatario}]}],
+        "from": {"email": remitente, "name": "Gastos en Carretera EMUNAH"},
+        "subject": f"Relación de gastos - {placa} - {conductor} ({fecha_inicio} a {fecha_fin})",
+        "content": [{
+            "type": "text/plain",
+            "value": (
+                f"Se generó la relación de gastos en carretera del vehículo {placa} "
+                f"(conductor: {conductor}), del {fecha_inicio} al {fecha_fin}.\n\n"
+                f"Se adjunta el archivo .xlsx con el detalle de cada gasto.\n\n"
+                f"Este correo se envió automáticamente desde la app de informes de EMUNAH."
+            ),
+        }],
+        "attachments": [{
+            "content": contenido_b64,
+            "filename": xlsx_path.name,
+            "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "disposition": "attachment",
+        }],
+    }
+
+    try:
+        resp = requests.post(
+            SENDGRID_URL,
+            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+            json=payload,
+            timeout=30,
+        )
+    except requests.RequestException as e:
+        raise MailerError(f"No se pudo conectar con SendGrid: {e}")
+
+    if resp.status_code >= 300:
+        raise MailerError(f"SendGrid respondió {resp.status_code}: {resp.text[:500]}")
