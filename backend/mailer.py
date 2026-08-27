@@ -79,6 +79,47 @@ def enviar_informe(docx_path: Path, empresa: str, numero: int, mes_ref: str):
         raise MailerError(f"SendGrid respondió {resp.status_code}: {resp.text[:500]}")
 
 
+def enviar_adjunto_bytes(contenido: bytes, filename: str, mime_type: str, asunto: str, cuerpo: str):
+    """Envía un adjunto genérico (bytes en memoria, no un archivo en disco) por
+    SendGrid. Se usa para reenviar comprobantes recibidos por WhatsApp sin
+    tener que guardarlos primero en el disco no persistente de Render."""
+    if not configurado():
+        raise MailerError(
+            "El envío de correo no está configurado (faltan SENDGRID_API_KEY/EMAIL_FROM "
+            "como variables de entorno en Render)."
+        )
+
+    api_key = os.environ["SENDGRID_API_KEY"]
+    remitente = os.environ["EMAIL_FROM"]
+    destinatario = os.environ.get("EMAIL_TO", "proyectos@emunah.com.co")
+
+    payload = {
+        "personalizations": [{"to": [{"email": destinatario}]}],
+        "from": {"email": remitente, "name": "WhatsApp Comprobantes EMUNAH"},
+        "subject": asunto,
+        "content": [{"type": "text/plain", "value": cuerpo}],
+        "attachments": [{
+            "content": base64.b64encode(contenido).decode("ascii"),
+            "filename": filename,
+            "type": mime_type,
+            "disposition": "attachment",
+        }],
+    }
+
+    try:
+        resp = requests.post(
+            SENDGRID_URL,
+            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+            json=payload,
+            timeout=30,
+        )
+    except requests.RequestException as e:
+        raise MailerError(f"No se pudo conectar con SendGrid: {e}")
+
+    if resp.status_code >= 300:
+        raise MailerError(f"SendGrid respondió {resp.status_code}: {resp.text[:500]}")
+
+
 def enviar_gastos(xlsx_path: Path, placa: str, conductor: str, fecha_inicio: str, fecha_fin: str):
     if not configurado():
         raise MailerError(

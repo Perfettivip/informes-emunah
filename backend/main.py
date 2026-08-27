@@ -24,8 +24,8 @@ import uuid
 from pathlib import Path
 from typing import List
 
-from fastapi import FastAPI, UploadFile, File, Form, HTTPException
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi import FastAPI, Request, UploadFile, File, Form, HTTPException
+from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
@@ -33,6 +33,7 @@ import catalogo
 import db
 import flota
 import mailer
+import whatsapp
 from generador import generar_informe, GeneradorError, REQUIRED_PHOTOS
 from gastos_generador import generar_gastos, GeneradorError as GastosError, TIPOS_GASTO
 
@@ -307,6 +308,29 @@ def descargar_gastos(filename: str):
         media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         filename=filename,
     )
+
+
+# ---------------------------------------------------------------------------
+# Webhook de WhatsApp Cloud API — recepción de comprobantes de pago
+# ---------------------------------------------------------------------------
+
+@app.get("/webhook/whatsapp")
+def whatsapp_verify(request: Request):
+    mode = request.query_params.get("hub.mode", "")
+    token = request.query_params.get("hub.verify_token", "")
+    challenge = request.query_params.get("hub.challenge", "")
+    try:
+        return PlainTextResponse(whatsapp.verificar_challenge(mode, token, challenge))
+    except whatsapp.WhatsAppConfigError as e:
+        raise HTTPException(403, str(e))
+
+
+@app.post("/webhook/whatsapp")
+async def whatsapp_incoming(request: Request):
+    payload = await request.json()
+    whatsapp.procesar_webhook(payload)
+    # Meta espera 200 rápido y sin importar el resultado interno, o reintenta.
+    return JSONResponse({"ok": True})
 
 
 app.mount("/", StaticFiles(directory=str(HERE / "static"), html=True), name="static")
