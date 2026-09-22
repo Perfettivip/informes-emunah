@@ -28,11 +28,15 @@ en la misma red, usando la IP de la Mac en vez de `localhost`).
    `informes.db` — la numeración consecutiva — se reinicie si el servicio
    se reinicia. Dado el bajo volumen mensual, es un riesgo aceptado a propósito.)
 5. **Variables de entorno** (pestaña "Environment" en Render) para que se
-   envíe el .docx por correo automáticamente. Se usa la API de SendGrid
+   envíe el .docx por correo automáticamente. Se usa la API de Brevo
    (HTTPS) en vez de SMTP directo, porque el plan Free de Render bloquea
-   las conexiones SMTP salientes:
-   - `SENDGRID_API_KEY` — API key generada en https://sendgrid.com (cuenta gratis)
-   - `EMAIL_FROM` — el correo verificado como "Single Sender" en SendGrid
+   las conexiones SMTP salientes. Se eligió Brevo (no SendGrid) porque su
+   plan gratis (300 correos/día) no vence — el de SendGrid es un trial de
+   60 días y después bloquea el envío hasta pagar:
+   - `BREVO_API_KEY` — API key generada en https://app.brevo.com (Settings →
+     SMTP & API → API Keys). Cuenta gratis, no pide tarjeta.
+   - `EMAIL_FROM` — el correo verificado como remitente en Brevo (Settings →
+     Senders, Domains & Dedicated IPs)
    - `EMAIL_TO` — a quién llega el informe (por defecto `proyectos@emunah.com.co`)
 6. Una vez desplegado, Render da una URL pública (ej. `https://informes-emunah.onrender.com`)
    — esa es la que abre el técnico desde el celular.
