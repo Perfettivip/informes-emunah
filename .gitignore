@@ -1,6 +1,8 @@
 # Datos generados / privados: nunca deben subirse al repo
 backend/salidas/
 backend/salidas_gastos/
+backend/salidas_repuestos/
+backend/salidas_ventas/
 backend/informes.db
 backend/_uploads/
 backend/_work/

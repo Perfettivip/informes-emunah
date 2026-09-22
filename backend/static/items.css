@@ -1,0 +1,83 @@
+.item-card {
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #fbfbfc;
+  position: relative;
+}
+.item-card .item-num {
+  font-weight: 600;
+  color: var(--azul);
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+select.item-num {
+  display: block;
+  border: 1px solid var(--azul);
+  border-radius: 6px;
+  background: white;
+  padding: 6px 28px 6px 10px;
+  cursor: pointer;
+  max-width: 70%;
+}
+.item-card .btn-quitar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: var(--rojo);
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+
+.btn-agregar {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  background: var(--azul-claro);
+  border: 1px dashed var(--azul);
+  color: var(--azul);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.resumen {
+  background: var(--azul-claro);
+  border: 1px solid var(--azul);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+.resumen .linea { display: flex; justify-content: space-between; padding: 3px 0; }
+.resumen .linea.total { font-weight: 700; border-top: 1px solid var(--azul); margin-top: 6px; padding-top: 8px; }
+
+.campo-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+.campo-checkbox input { margin: 0; width: 16px; height: 16px; }
+
+.tipo-pago-opciones { display: flex; gap: 8px; }
+.tipo-pago-opciones label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.tipo-pago-opciones input { margin: 0; }

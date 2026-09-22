@@ -21,6 +21,7 @@ Endpoints:
 import re
 import shutil
 import uuid
+from datetime import datetime
 from pathlib import Path
 from typing import List
 
@@ -36,10 +37,14 @@ import mailer
 import whatsapp
 from generador import generar_informe, GeneradorError, REQUIRED_PHOTOS
 from gastos_generador import generar_gastos, GeneradorError as GastosError, TIPOS_GASTO
+from repuestos_generador import generar_repuestos, GeneradorError as RepuestosError
+from ventas_generador import generar_ventas, GeneradorError as VentasError, TIPOS_PAGO
 
 HERE = Path(__file__).resolve().parent
 SALIDAS_DIR = HERE / "salidas"
 GASTOS_DIR = HERE / "salidas_gastos"
+REPUESTOS_DIR = HERE / "salidas_repuestos"
+VENTAS_DIR = HERE / "salidas_ventas"
 UPLOADS_DIR = HERE / "_uploads"
 WORK_DIR = HERE / "_work"
 
@@ -301,6 +306,150 @@ def crear_gastos(payload: GastosPayload):
 @app.get("/api/download-gastos/{filename}")
 def descargar_gastos(filename: str):
     path = GASTOS_DIR / filename
+    if not path.exists():
+        raise HTTPException(404, "No existe ese archivo")
+    return FileResponse(
+        path,
+        media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        filename=filename,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Repuestos EMUNAH
+# ---------------------------------------------------------------------------
+
+class RepuestoItem(BaseModel):
+    tipo: str = ""
+    fecha: str
+    descripcion: str = ""
+    valor: float = 0
+
+
+class RepuestosPayload(BaseModel):
+    responsable: str
+    repuestos: List[RepuestoItem]
+
+
+def _nombre_archivo_generico(prefijo: str, responsable: str) -> str:
+    responsable_seguro = carpeta_segura(responsable)
+    ahora = datetime.now().strftime("%Y-%m-%d_%H%M%S")
+    return f"{prefijo} - {responsable_seguro} - {ahora}.xlsx"
+
+
+@app.post("/api/repuestos")
+def crear_repuestos(payload: RepuestosPayload):
+    if not payload.repuestos:
+        raise HTTPException(400, "Debes agregar al menos un repuesto")
+
+    filename = _nombre_archivo_generico("REPUESTOS", payload.responsable)
+    out_path = REPUESTOS_DIR / filename
+
+    cfg = {
+        "responsable": payload.responsable,
+        "fecha_envio": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "repuestos": [r.model_dump() for r in payload.repuestos],
+    }
+
+    try:
+        generar_repuestos(cfg, out_path)
+    except RepuestosError as e:
+        raise HTTPException(400, str(e))
+
+    enviado = False
+    error_envio = None
+    try:
+        mailer.enviar_repuestos(out_path, payload.responsable, len(payload.repuestos))
+        enviado = True
+    except mailer.MailerError as e:
+        error_envio = str(e)
+
+    return JSONResponse({
+        "ok": True,
+        "filename": filename,
+        "enviado_por_correo": enviado,
+        "error_envio": error_envio,
+        "download_url": f"/api/download-repuestos/{filename}",
+    })
+
+
+@app.get("/api/download-repuestos/{filename}")
+def descargar_repuestos(filename: str):
+    path = REPUESTOS_DIR / filename
+    if not path.exists():
+        raise HTTPException(404, "No existe ese archivo")
+    return FileResponse(
+        path,
+        media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        filename=filename,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Control Ventas
+# ---------------------------------------------------------------------------
+
+class VentaItem(BaseModel):
+    fecha: str
+    cliente: str = ""
+    cedula: str = ""
+    contacto: str = ""
+    descripcion: str = ""
+    valor_base: float = 0
+    iva: float = 0
+    total: float = 0
+    tipo_pago: str = ""
+
+
+class VentasPayload(BaseModel):
+    responsable: str
+    ventas: List[VentaItem]
+
+
+@app.get("/api/tipos-pago")
+def tipos_pago_endpoint():
+    return {"tipos_pago": TIPOS_PAGO}
+
+
+@app.post("/api/ventas")
+def crear_ventas(payload: VentasPayload):
+    if not payload.ventas:
+        raise HTTPException(400, "Debes agregar al menos una venta")
+
+    filename = _nombre_archivo_generico("VENTAS", payload.responsable)
+    out_path = VENTAS_DIR / filename
+
+    cfg = {
+        "responsable": payload.responsable,
+        "fecha_envio": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "ventas": [v.model_dump() for v in payload.ventas],
+    }
+
+    try:
+        generar_ventas(cfg, out_path)
+    except VentasError as e:
+        raise HTTPException(400, str(e))
+
+    enviado = False
+    error_envio = None
+    try:
+        mailer.enviar_ventas(out_path, payload.responsable, len(payload.ventas))
+        enviado = True
+    except mailer.MailerError as e:
+        error_envio = str(e)
+
+    return JSONResponse({
+        "ok": True,
+        "filename": filename,
+        "enviado_por_correo": enviado,
+        "error_envio": error_envio,
+        "download_url": f"/api/download-ventas/{filename}",
+    })
+
+
+@app.get("/api/download-ventas/{filename}")
+def descargar_ventas(filename: str):
+    path = VENTAS_DIR / filename
     if not path.exists():
         raise HTTPException(404, "No existe ese archivo")
     return FileResponse(

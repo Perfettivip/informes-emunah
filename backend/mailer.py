@@ -79,6 +79,75 @@ def enviar_informe(docx_path: Path, empresa: str, numero: int, mes_ref: str):
         raise MailerError(f"SendGrid respondió {resp.status_code}: {resp.text[:500]}")
 
 
+def _enviar_xlsx(xlsx_path: Path, nombre_remitente: str, asunto: str, cuerpo: str):
+    if not configurado():
+        raise MailerError(
+            "El envío de correo no está configurado (faltan SENDGRID_API_KEY/EMAIL_FROM "
+            "como variables de entorno en Render)."
+        )
+
+    api_key = os.environ["SENDGRID_API_KEY"]
+    remitente = os.environ["EMAIL_FROM"]
+    destinatario = os.environ.get("EMAIL_TO", "proyectos@emunah.com.co")
+
+    with open(xlsx_path, "rb") as f:
+        contenido_b64 = base64.b64encode(f.read()).decode("ascii")
+
+    payload = {
+        "personalizations": [{"to": [{"email": destinatario}]}],
+        "from": {"email": remitente, "name": nombre_remitente},
+        "subject": asunto,
+        "content": [{"type": "text/plain", "value": cuerpo}],
+        "attachments": [{
+            "content": contenido_b64,
+            "filename": xlsx_path.name,
+            "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "disposition": "attachment",
+        }],
+    }
+
+    try:
+        resp = requests.post(
+            SENDGRID_URL,
+            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+            json=payload,
+            timeout=30,
+        )
+    except requests.RequestException as e:
+        raise MailerError(f"No se pudo conectar con SendGrid: {e}")
+
+    if resp.status_code >= 300:
+        raise MailerError(f"SendGrid respondió {resp.status_code}: {resp.text[:500]}")
+
+
+def enviar_repuestos(xlsx_path: Path, responsable: str, n_items: int):
+    _enviar_xlsx(
+        xlsx_path,
+        "Repuestos EMUNAH",
+        f"Repuestos EMUNAH - {responsable} ({n_items} ítem{'s' if n_items != 1 else ''})",
+        (
+            f"Se generó la relación de repuestos diligenciada por {responsable}, "
+            f"con {n_items} ítem{'s' if n_items != 1 else ''}.\n\n"
+            f"Se adjunta el archivo .xlsx con el detalle.\n\n"
+            f"Este correo se envió automáticamente desde la app de informes de EMUNAH."
+        ),
+    )
+
+
+def enviar_ventas(xlsx_path: Path, responsable: str, n_items: int):
+    _enviar_xlsx(
+        xlsx_path,
+        "Control Ventas EMUNAH",
+        f"Control Ventas - {responsable} ({n_items} venta{'s' if n_items != 1 else ''})",
+        (
+            f"Se generó el control de ventas diligenciado por {responsable}, "
+            f"con {n_items} venta{'s' if n_items != 1 else ''}.\n\n"
+            f"Se adjunta el archivo .xlsx con el detalle.\n\n"
+            f"Este correo se envió automáticamente desde la app de informes de EMUNAH."
+        ),
+    )
+
+
 def enviar_adjunto_bytes(contenido: bytes, filename: str, mime_type: str, asunto: str, cuerpo: str):
     """Envía un adjunto genérico (bytes en memoria, no un archivo en disco) por
     SendGrid. Se usa para reenviar comprobantes recibidos por WhatsApp sin
