@@ -6,3 +6,4 @@ defusedxml
 lxml
 requests
 openpyxl
+python-docx

@@ -37,12 +37,14 @@ import mailer
 import whatsapp
 from generador import generar_informe, GeneradorError, REQUIRED_PHOTOS
 from gastos_generador import generar_gastos, GeneradorError as GastosError, TIPOS_GASTO
+from reporte_generador import generar_reporte, GeneradorError as ReporteError
 from repuestos_generador import generar_repuestos, GeneradorError as RepuestosError
 from ventas_generador import generar_ventas, GeneradorError as VentasError, TIPOS_PAGO
 
 HERE = Path(__file__).resolve().parent
 SALIDAS_DIR = HERE / "salidas"
 GASTOS_DIR = HERE / "salidas_gastos"
+REPORTES_DIR = HERE / "salidas_reportes"
 REPUESTOS_DIR = HERE / "salidas_repuestos"
 VENTAS_DIR = HERE / "salidas_ventas"
 UPLOADS_DIR = HERE / "_uploads"
@@ -480,6 +482,66 @@ async def whatsapp_incoming(request: Request):
     whatsapp.procesar_webhook(payload)
     # Meta espera 200 rápido y sin importar el resultado interno, o reintenta.
     return JSONResponse({"ok": True})
+
+
+# ---------------------------------------------------------------------------
+# Reporte de Trabajo (técnicos): encabezado + entradas texto/foto
+# ---------------------------------------------------------------------------
+
+@app.post("/api/reporte")
+async def crear_reporte(request: Request):
+    form = await request.form()
+    campos = {k: str(form.get(k, "")).strip() for k in ("fecha", "tecnico", "lugar", "responsable_area")}
+    faltan = [k for k, v in campos.items() if not v]
+    if faltan:
+        raise HTTPException(400, f"Faltan campos: {', '.join(faltan)}")
+
+    try:
+        n = int(form.get("n_entradas", 0))
+    except ValueError:
+        n = 0
+    if n < 1 or n > 60:
+        raise HTTPException(400, "Debes agregar al menos una entrada")
+
+    lote_dir = UPLOADS_DIR / str(uuid.uuid4())
+    lote_dir.mkdir(parents=True, exist_ok=True)
+    try:
+        entradas = []
+        for i in range(n):
+            texto = str(form.get(f"texto_{i}", "")).strip()
+            up = form.get(f"foto_{i}")
+            foto = None
+            if up is not None and getattr(up, "filename", ""):
+                dest = lote_dir / f"foto_{i}"
+                with dest.open("wb") as f:
+                    shutil.copyfileobj(up.file, f)
+                foto = str(dest)
+            if texto or foto:
+                entradas.append({"texto": texto, "foto": foto})
+
+        filename = _nombre_archivo_generico("REPORTE", campos["tecnico"]).replace(".xlsx", ".docx")
+        out_path = REPORTES_DIR / filename
+        try:
+            generar_reporte({**campos, "entradas": entradas}, out_path, lote_dir)
+        except ReporteError as e:
+            raise HTTPException(400, str(e))
+
+        enviado = False
+        error_envio = None
+        try:
+            mailer.enviar_reporte(out_path, campos["tecnico"], campos["lugar"], campos["fecha"])
+            enviado = True
+        except mailer.MailerError as e:
+            error_envio = str(e)
+    finally:
+        shutil.rmtree(lote_dir, ignore_errors=True)
+
+    return JSONResponse({
+        "ok": True,
+        "filename": filename,
+        "enviado_por_correo": enviado,
+        "error_envio": error_envio,
+    })
 
 
 app.mount("/", StaticFiles(directory=str(HERE / "static"), html=True), name="static")

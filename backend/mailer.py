@@ -103,6 +103,19 @@ def enviar_gastos(xlsx_path: Path, placa: str, conductor: str, fecha_inicio: str
     )
 
 
+def enviar_reporte(docx_path: Path, tecnico: str, lugar: str, fecha: str):
+    _enviar(
+        "Reportes EMUNAH",
+        f"Reporte de trabajo - {tecnico} - {lugar} ({fecha})",
+        (
+            f"Reporte de trabajo diligenciado por {tecnico} en {lugar} ({fecha}).\n\n"
+            f"Se adjunta el archivo .docx con el detalle y las fotos.\n\n"
+            f"Este correo se envió automáticamente desde la app de informes de EMUNAH."
+        ),
+        _adjunto_archivo(docx_path),
+    )
+
+
 def enviar_repuestos(xlsx_path: Path, responsable: str, n_items: int):
     _enviar(
         "Repuestos EMUNAH",
