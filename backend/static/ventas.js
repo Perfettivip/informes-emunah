@@ -12,6 +12,10 @@ const IVA_PORCENTAJE = 0.19;
 
 let contadorItems = 0;
 let tiposPago = [];
+let productos = [];   // inventario (Google Sheet); vacío = formulario sin inventario
+
+const etiquetaProducto = p => `${p.codigo} · ${p.producto} (disp. ${p.stock})`;
+const buscarProducto = txt => productos.find(p => etiquetaProducto(p) === txt.trim());
 
 function filaVenta() {
   contadorItems += 1;
@@ -44,9 +48,25 @@ function filaVenta() {
           <input type="text" class="v-contacto">
         </div>
       </div>
+      ${productos.length ? `
       <div class="campo">
-        <label>Descripción</label>
-        <input type="text" class="v-descripcion" placeholder="Producto o servicio vendido">
+        <label>Producto del inventario</label>
+        <input type="text" class="v-producto" list="dl-productos" placeholder="Escribe código o nombre y elige de la lista">
+        <small class="v-disp" style="color:var(--gris)"></small>
+      </div>
+      <div class="row2">
+        <div class="campo">
+          <label>Cantidad</label>
+          <input type="number" class="v-cantidad" min="0" step="1" placeholder="0">
+        </div>
+        <div class="campo">
+          <label>Precio unitario (sin IVA)</label>
+          <input type="number" class="v-precio" min="0" step="1" placeholder="0">
+        </div>
+      </div>` : ""}
+      <div class="campo">
+        <label>${productos.length ? "Nota (opcional)" : "Descripción"}</label>
+        <input type="text" class="v-descripcion" placeholder="${productos.length ? "Observación de la venta" : "Producto o servicio vendido"}">
       </div>
       <div class="campo">
         <label>Valor base</label>
@@ -102,6 +122,21 @@ function wireCard(card) {
   };
   valorBase.addEventListener("input", recalcularDesdeBase);
 
+  const inpProd = card.querySelector(".v-producto");
+  if (inpProd) {
+    const cant = card.querySelector(".v-cantidad");
+    const precio = card.querySelector(".v-precio");
+    const disp = card.querySelector(".v-disp");
+    const desdeProducto = () => {
+      const p = buscarProducto(inpProd.value);
+      const q = parseFloat(cant.value) || 0;
+      disp.textContent = p ? `Disponible: ${p.stock}` + (q > p.stock ? " — ⚠ la cantidad supera el stock" : "") : "";
+      valorBase.value = Math.round(q * (parseFloat(precio.value) || 0)) || "";
+      recalcularDesdeBase();
+    };
+    [inpProd, cant, precio].forEach(el => el.addEventListener("input", desdeProducto));
+  }
+
   aplicaIva.addEventListener("change", () => {
     iva.disabled = !aplicaIva.checked;
     recalcularDesdeBase();
@@ -117,17 +152,31 @@ function wireCard(card) {
   total.addEventListener("input", actualizarResumen);
 }
 
+function datosProducto(card) {
+  const inp = card.querySelector(".v-producto");
+  if (!inp || !inp.value.trim()) return {};
+  const p = buscarProducto(inp.value);
+  if (!p) return { producto_invalido: inp.value.trim() };
+  return {
+    codigo: p.codigo,
+    cantidad: parseFloat(card.querySelector(".v-cantidad").value) || 0,
+    precio_unit: parseFloat(card.querySelector(".v-precio").value) || 0,
+    descripcion_prod: p.producto,
+  };
+}
+
 function leerVentas() {
   return Array.from(document.querySelectorAll(".item-card")).map(card => ({
     fecha: card.querySelector(".v-fecha").value,
     cliente: card.querySelector(".v-cliente").value.trim(),
     cedula: card.querySelector(".v-cedula").value.trim(),
     contacto: card.querySelector(".v-contacto").value.trim(),
-    descripcion: card.querySelector(".v-descripcion").value.trim(),
+    descripcion: [ (datosProducto(card).descripcion_prod || ""), card.querySelector(".v-descripcion").value.trim() ].filter(Boolean).join(" — "),
     valor_base: parseFloat(card.querySelector(".v-valor-base").value) || 0,
     iva: parseFloat(card.querySelector(".v-iva").value) || 0,
     total: parseFloat(card.querySelector(".v-total").value) || 0,
     tipo_pago: (card.querySelector(".v-tipo-pago:checked") || {}).value || "",
+    ...datosProducto(card),
   }));
 }
 
@@ -154,7 +203,14 @@ async function cargar() {
     tiposPago = ["Contado", "Transferencia", "Tarjeta"];
   }
 
+  try {
+    const r = await fetch("/api/inventario");
+    const d = await r.json();
+    if (r.ok && d.configurado) productos = d.productos;
+  } catch (e) { productos = []; }
+
   app.innerHTML = `
+    <datalist id="dl-productos">${productos.map(p => `<option value="${escapeHtml(etiquetaProducto(p))}">`).join("")}</datalist>
     <form id="form-ventas">
       <fieldset>
         <legend>Responsable</legend>
@@ -193,6 +249,9 @@ async function enviar() {
   if (!ventas.length) { alert("Agrega al menos una venta"); return; }
   if (ventas.some(v => !v.fecha)) { alert("Falta la fecha en alguna de las ventas"); return; }
   if (ventas.some(v => !v.cliente)) { alert("Falta el nombre del cliente en alguna de las ventas"); return; }
+  const inv = ventas.find(v => v.producto_invalido);
+  if (inv) { alert("Elige el producto de la lista desplegable: \"" + inv.producto_invalido + "\""); return; }
+  if (ventas.some(v => v.codigo && (!(v.cantidad > 0) || !(v.precio_unit > 0)))) { alert("Falta cantidad o precio unitario en un producto del inventario"); return; }
 
   const payload = { responsable, ventas };
 
@@ -208,8 +267,9 @@ async function enviar() {
     });
     const json = await res.json();
     if (!res.ok) throw new Error((json.detail && (json.detail.msg || JSON.stringify(json.detail))) || "Error al generar el control de ventas");
+    const invTxt = (json.inventario || []).length ? "<br>Inventario actualizado." : "";
     if (json.enviado_por_correo) {
-      resultado.innerHTML = `<div class="resultado ok">✅ Control de ventas generado y enviado por correo.</div>`;
+      resultado.innerHTML = `<div class="resultado ok">✅ Control de ventas generado y enviado por correo.${invTxt}</div>`;
     } else {
       resultado.innerHTML = `
         <div class="resultado error">

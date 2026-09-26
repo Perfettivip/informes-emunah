@@ -130,14 +130,35 @@ def enviar_repuestos(xlsx_path: Path, responsable: str, n_items: int):
     )
 
 
-def enviar_ventas(xlsx_path: Path, responsable: str, n_items: int):
+def _resumen_inventario(lineas: list) -> str:
+    if not lineas:
+        return ""
+    def cop(n):
+        return "$ " + f"{round(n):,}".replace(",", ".")
+    t = sum(l["total"] for l in lineas)
+    c = sum(l["costo_total"] for l in lineas)
+    out = ["", "DESCUENTO DE INVENTARIO (base sin IVA; costo = factura BAYEN con descuento 12%)"]
+    for l in lineas:
+        out.append(
+            f"- {l['producto']} ({l['codigo']}): {l['cantidad']:g} und | vendido {cop(l['total'])} "
+            f"vs costo {cop(l['costo_total'])} | utilidad {cop(l['utilidad'])} | quedan {l['stock_restante']:g}"
+        )
+    out.append(f"TOTAL: vendido {cop(t)} vs costo {cop(c)} = utilidad {cop(t - c)} ({(t - c) / t * 100 if t else 0:.1f}%)")
+    alertas = [l for l in lineas if l["stock_restante"] <= 0 or (l.get("minimo") and l["stock_restante"] <= l["minimo"])]
+    for l in alertas:
+        out.append(f"⚠ STOCK BAJO: {l['producto']} ({l['codigo']}) quedan {l['stock_restante']:g}")
+    return "\n".join(out)
+
+
+def enviar_ventas(xlsx_path: Path, responsable: str, n_items: int, lineas_inv: list = None):
     _enviar(
         "Control Ventas EMUNAH",
         f"Control Ventas - {responsable} ({n_items} venta{'s' if n_items != 1 else ''})",
         (
             f"Se generó el control de ventas diligenciado por {responsable}, "
             f"con {n_items} venta{'s' if n_items != 1 else ''}.\n\n"
-            f"Se adjunta el archivo .xlsx con el detalle.\n\n"
+            f"Se adjunta el archivo .xlsx con el detalle."
+            f"{_resumen_inventario(lineas_inv or [])}\n\n"
             f"Este correo se envió automáticamente desde la app de informes de EMUNAH."
         ),
         _adjunto_archivo(xlsx_path),

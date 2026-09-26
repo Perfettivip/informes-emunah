@@ -33,6 +33,7 @@ from pydantic import BaseModel
 import catalogo
 import db
 import flota
+import inventario
 import mailer
 import whatsapp
 from generador import generar_informe, GeneradorError, REQUIRED_PHOTOS
@@ -401,6 +402,9 @@ class VentaItem(BaseModel):
     iva: float = 0
     total: float = 0
     tipo_pago: str = ""
+    codigo: str = ""         # producto del inventario (vacío = venta sin inventario)
+    cantidad: float = 0
+    precio_unit: float = 0   # precio de venta unitario sin IVA
 
 
 class VentasPayload(BaseModel):
@@ -413,10 +417,33 @@ def tipos_pago_endpoint():
     return {"tipos_pago": TIPOS_PAGO}
 
 
+@app.get("/api/inventario")
+def inventario_endpoint():
+    if not inventario.configurado():
+        return {"configurado": False, "productos": []}
+    try:
+        return {"configurado": True, "productos": inventario.listar()}
+    except inventario.InventarioError as e:
+        raise HTTPException(502, str(e))
+
+
 @app.post("/api/ventas")
 def crear_ventas(payload: VentasPayload):
     if not payload.ventas:
         raise HTTPException(400, "Debes agregar al menos una venta")
+
+    # Ventas con producto de inventario: se descuentan del Sheet ANTES de generar
+    # el archivo; si no hay stock suficiente no se registra nada.
+    lineas_inv = []
+    con_producto = [v for v in payload.ventas if v.codigo]
+    if con_producto:
+        try:
+            lineas_inv = inventario.registrar_venta(payload.responsable, [
+                {"fecha": v.fecha, "cliente": v.cliente, "codigo": v.codigo,
+                 "cantidad": v.cantidad, "precio_unit": v.precio_unit, "nota": v.descripcion}
+                for v in con_producto])
+        except inventario.InventarioError as e:
+            raise HTTPException(400, str(e))
 
     filename = _nombre_archivo_generico("VENTAS", payload.responsable)
     out_path = VENTAS_DIR / filename
@@ -435,7 +462,7 @@ def crear_ventas(payload: VentasPayload):
     enviado = False
     error_envio = None
     try:
-        mailer.enviar_ventas(out_path, payload.responsable, len(payload.ventas))
+        mailer.enviar_ventas(out_path, payload.responsable, len(payload.ventas), lineas_inv)
         enviado = True
     except mailer.MailerError as e:
         error_envio = str(e)
@@ -445,6 +472,7 @@ def crear_ventas(payload: VentasPayload):
         "filename": filename,
         "enviado_por_correo": enviado,
         "error_envio": error_envio,
+        "inventario": lineas_inv,
         "download_url": f"/api/download-ventas/{filename}",
     })
 
