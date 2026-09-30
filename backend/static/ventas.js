@@ -62,6 +62,7 @@ function filaVenta() {
         <div class="campo">
           <label>Precio unitario (sin IVA)</label>
           <input type="number" class="v-precio" min="0" step="1" placeholder="0">
+          <small class="v-sugerido" style="color:var(--gris)"></small>
         </div>
       </div>` : ""}
       <div class="campo">
@@ -127,14 +128,29 @@ function wireCard(card) {
     const cant = card.querySelector(".v-cantidad");
     const precio = card.querySelector(".v-precio");
     const disp = card.querySelector(".v-disp");
-    const desdeProducto = () => {
+    const sugerido = card.querySelector(".v-sugerido");
+
+    const recomputar = () => {
       const p = buscarProducto(inpProd.value);
       const q = parseFloat(cant.value) || 0;
       disp.textContent = p ? `Disponible: ${p.stock}` + (q > p.stock ? " — ⚠ la cantidad supera el stock" : "") : "";
       valorBase.value = Math.round(q * (parseFloat(precio.value) || 0)) || "";
       recalcularDesdeBase();
     };
-    [inpProd, cant, precio].forEach(el => el.addEventListener("input", desdeProducto));
+
+    // Al elegir el producto (o cambiarlo), se sugiere el precio de venta con
+    // margen del 25% sobre el costo; el vendedor puede sobrescribirlo.
+    inpProd.addEventListener("input", () => {
+      const p = buscarProducto(inpProd.value);
+      if (p) {
+        precio.value = p.precio_sugerido;
+        sugerido.textContent = `Precio sugerido (margen 25%): ${formatoMoneda(p.precio_sugerido)} antes de IVA · ${formatoMoneda(p.precio_sugerido_iva)} con IVA`;
+      } else {
+        sugerido.textContent = "";
+      }
+      recomputar();
+    });
+    [cant, precio].forEach(el => el.addEventListener("input", recomputar));
   }
 
   aplicaIva.addEventListener("change", () => {
