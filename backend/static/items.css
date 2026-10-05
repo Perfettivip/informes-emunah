@@ -5,6 +5,7 @@
   margin-bottom: 12px;
   background: #fbfbfc;
   position: relative;
+  min-width: 0;
 }
 .item-card .item-num {
   font-weight: 600;
@@ -67,9 +68,9 @@ select.item-num {
 }
 .campo-checkbox input { margin: 0; width: 16px; height: 16px; }
 
-.tipo-pago-opciones { display: flex; gap: 8px; }
+.tipo-pago-opciones { display: flex; flex-wrap: wrap; gap: 8px; }
 .tipo-pago-opciones label {
-  flex: 1;
+  flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,3 +82,9 @@ select.item-num {
   cursor: pointer;
 }
 .tipo-pago-opciones input { margin: 0; }
+
+@media (max-width: 420px) {
+  .item-card { padding: 10px; }
+  .item-card .item-num { padding-right: 70px; } /* que no quede debajo de "✕ Quitar" */
+  .tipo-pago-opciones label { flex: 1 1 100%; justify-content: flex-start; }
+}

@@ -50,6 +50,7 @@ fieldset {
   margin-bottom: 16px;
   padding: 14px;
   background: white;
+  min-width: 0; /* por defecto el navegador lo estira al contenido más ancho y desborda en celular */
 }
 
 legend {
@@ -60,10 +61,13 @@ legend {
 
 .campo { margin-bottom: 12px; }
 .campo label { display: block; font-size: 0.85rem; color: var(--gris); margin-bottom: 4px; }
-.campo input[type="text"],
+.campo input:not([type="checkbox"]):not([type="radio"]),
 .campo select,
 .campo textarea {
+  display: block;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding: 10px;
   border: 1px solid var(--borde);
   border-radius: 8px;
@@ -71,8 +75,16 @@ legend {
   background: white;
 }
 
-.row2 { display: flex; gap: 10px; }
-.row2 > div { flex: 1; }
+.row2 { display: flex; flex-wrap: wrap; gap: 10px; }
+.row2 > div { flex: 1 1 0; min-width: 0; }
+
+/* iOS dibuja la fecha con un ancho propio que ignora width: 100% */
+.campo input[type="date"] {
+  -webkit-appearance: none;
+  appearance: none;
+  min-height: 42px;
+  text-align: left;
+}
 
 .slot {
   border: 1px dashed var(--borde);
@@ -89,7 +101,8 @@ legend {
   margin-bottom: 8px;
   font-size: 0.95rem;
 }
-.slot-foto { width: 100%; }
+.slot-foto,
+.slot input[type="file"] { width: 100%; max-width: 100%; min-width: 0; }
 .slot-preview {
   margin-top: 8px;
   max-width: 100%;
@@ -149,3 +162,12 @@ button#enviar:disabled { background: var(--gris); }
 .historial ul { list-style: none; padding: 0; }
 .historial li { padding: 6px 0; border-bottom: 1px solid var(--borde); }
 .historial a { color: var(--azul); text-decoration: none; }
+
+/* Celulares pequeños: los campos en fila pasan a uno debajo del otro
+   y se reducen márgenes para ganar ancho útil */
+@media (max-width: 420px) {
+  main { padding: 10px; padding-bottom: 100px; }
+  fieldset { padding: 10px; }
+  .row2 { flex-direction: column; gap: 0; }
+  .row2 > div { flex: 1 1 auto; }
+}
