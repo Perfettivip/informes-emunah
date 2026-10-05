@@ -73,13 +73,23 @@ def anio_corto(fecha_o_mes: str) -> str:
     return m.group(1)[-2:]
 
 
-def nombre_archivo(numero: int, anio2: str, empresa: str, mes_ref: str) -> str:
+def nombre_archivo(numero: int, anio2: str, empresa: str, mes_ref: str, tipo_mant: str = "Preventivo") -> str:
     m = re.match(r"([a-záéíóúñ]+)\s+de\s+([\d.]+)", mes_ref.strip(), re.IGNORECASE)
     if not m:
         raise HTTPException(400, f"mes_ref inválido: {mes_ref!r} (ej: 'agosto de 2.026')")
     mes = m.group(1).upper()
     anio = m.group(2).replace(".", "")
-    return f"{numero} - {anio2} {empresa.upper()} MANTENIMIENTO PREVENTIVO BTA {mes} {anio}.docx"
+    return f"{numero} - {anio2} {empresa.upper()} MANTENIMIENTO {tipo_mant.upper()} BTA {mes} {anio}.docx"
+
+
+def datos_tipo_reparacion(tipo_reparacion: str):
+    """'VRV Daikin - Correctivo (Refrigerante/Conexiones)' -> ('Correctivo', 'VRV DAIKIN').
+    Vacío (formulario antiguo) -> textos originales de la plantilla."""
+    equipo, _, tipo = tipo_reparacion.partition(" - ")
+    if not equipo.strip():
+        return "Preventivo", "UNIDADES EXTERNAS CONDENSADORAS"
+    tipo_mant = "Correctivo" if tipo.strip().lower().startswith("correctivo") else "Preventivo"
+    return tipo_mant, equipo.strip().upper()
 
 
 @app.get("/api/catalogo")
@@ -120,6 +130,7 @@ async def crear_informe(
     mes_ref: str = Form(...),
     fecha_carta: str = Form(...),
     parrafo_intro: str = Form(catalogo.PARRAFO_INTRO_DEFAULT),
+    tipo_reparacion: str = Form(""),
     obs1: str = Form(...),
     obs2: str = Form(...),
     obs3: str = Form(...),
@@ -154,7 +165,8 @@ async def crear_informe(
     numero = db.siguiente_numero(empresa)
     anio2 = anio_corto(fecha_carta)
     num_informe = f"{numero:03d}– {anio2} {codigo_empresa(empresa)}"
-    filename = nombre_archivo(numero, anio2, empresa, mes_ref)
+    tipo_mant, titulo_equipo = datos_tipo_reparacion(tipo_reparacion)
+    filename = nombre_archivo(numero, anio2, empresa, mes_ref, tipo_mant)
     empresa_dir = SALIDAS_DIR / carpeta_segura(empresa)
 
     lote_dir = UPLOADS_DIR / str(uuid.uuid4())
@@ -185,6 +197,8 @@ async def crear_informe(
             "mes_ref": mes_ref,
             "num_informe": num_informe,
             "parrafo_intro": parrafo_intro,
+            "tipo_mant": tipo_mant,
+            "titulo_equipo": titulo_equipo,
             "obs1": obs1, "obs2": obs2, "obs3": obs3,
             "trabajo1": trabajo1, "trabajo2": trabajo2,
             "gas_refrigerante": gas_refrigerante,

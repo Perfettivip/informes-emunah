@@ -22,6 +22,12 @@ SIMPLE_PLACEHOLDERS = [
     "fecha_carta", "mes_ref", "num_informe", "parrafo_intro",
     "obs1", "obs2", "obs3", "trabajo1", "trabajo2", "gas_refrigerante",
 ]
+# Marcadores que dependen del tipo de equipo/mantenimiento; si no llegan se
+# usa el texto original de la plantilla (Informes 9 y 10 de FALABELLA.COM).
+OPTIONAL_PLACEHOLDERS = {
+    "tipo_mant": "Preventivo",
+    "titulo_equipo": "UNIDADES EXTERNAS CONDENSADORAS",
+}
 
 
 class GeneradorError(Exception):
@@ -52,6 +58,8 @@ def _apply_placeholders(xml_path: Path, cfg: dict):
 
     for key in SIMPLE_PLACEHOLDERS:
         sub(key.upper(), cfg[key])
+    for key, default in OPTIONAL_PLACEHOLDERS.items():
+        sub(key.upper(), cfg.get(key) or default)
 
     by_n = {f["n"]: f for f in cfg["fotos"]}
     for n in range(1, REQUIRED_PHOTOS + 1):

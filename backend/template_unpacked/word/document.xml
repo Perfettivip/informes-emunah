@@ -242,7 +242,7 @@
           <w:sz w:val="24"/>
           <w:szCs w:val="24"/>
         </w:rPr>
-        <w:t>Ref.: Informe mantenimiento Preventivo mes de {{MES_REF}}.</w:t>
+        <w:t>Ref.: Informe mantenimiento {{TIPO_MANT}} mes de {{MES_REF}}.</w:t>
       </w:r>
       
       
@@ -604,7 +604,7 @@
           <w:szCs w:val="28"/>
           <w:lang w:val="en-US"/>
         </w:rPr>
-        <w:t>UNIDADES EXTERNAS CONDENSADORAS</w:t>
+        <w:t>{{TITULO_EQUIPO}}</w:t>
       </w:r>
     </w:p>
     <w:p w14:paraId="5309126A" w14:textId="77777777" w:rsidR="008A50F6" w:rsidRDefault="008A50F6" w:rsidP="006B2958">
