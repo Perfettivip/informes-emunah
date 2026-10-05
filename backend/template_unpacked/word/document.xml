@@ -2325,7 +2325,7 @@
           <w:u w:val="single"/>
           <w:lang w:val="en-US"/>
         </w:rPr>
-        <w:t>OBSERVACIONES</w:t>
+        <w:t>{{OBS_TITULO}}</w:t>
       </w:r>
     </w:p>
     <w:p w14:paraId="4EDD70ED" w14:textId="77777777" w:rsidR="0094420B" w:rsidRDefault="0094420B" w:rsidP="006B2958">
@@ -2368,124 +2368,14 @@
           <w:sz w:val="24"/>
           <w:szCs w:val="24"/>
         </w:rPr>
-        <w:t>Limpieza, verificación y purga de desagües.</w:t>
+        <w:t>{{OBS_ITEM}}</w:t>
       </w:r>
     </w:p>
-    <w:p w14:paraId="41507553" w14:textId="77777777" w:rsidR="00DA3E46" w:rsidRPr="005B69D7" w:rsidRDefault="00DA3E46" w:rsidP="00534B5C">
-      <w:pPr>
-        <w:numPr>
-          <w:ilvl w:val="0"/>
-          <w:numId w:val="14"/>
-        </w:numPr>
-        <w:spacing w:after="0"/>
-        <w:jc w:val="both"/>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-        <w:t>Limpieza y revisión bandeja de condensados.</w:t>
-      </w:r>
-    </w:p>
-    <w:p w14:paraId="46B1B929" w14:textId="77777777" w:rsidR="00DA3E46" w:rsidRPr="00DA3E46" w:rsidRDefault="00DA3E46" w:rsidP="00534B5C">
-      <w:pPr>
-        <w:numPr>
-          <w:ilvl w:val="0"/>
-          <w:numId w:val="14"/>
-        </w:numPr>
-        <w:spacing w:after="0"/>
-        <w:jc w:val="both"/>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-        <w:t>Toma de tensión y corriente.</w:t>
-      </w:r>
-    </w:p>
-    <w:p w14:paraId="2B1922BA" w14:textId="77777777" w:rsidR="00DA3E46" w:rsidRDefault="00DA3E46" w:rsidP="00534B5C">
-      <w:pPr>
-        <w:numPr>
-          <w:ilvl w:val="0"/>
-          <w:numId w:val="14"/>
-        </w:numPr>
-        <w:spacing w:after="0"/>
-        <w:jc w:val="both"/>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:noProof/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-          <w:lang w:eastAsia="es-CO"/>
-        </w:rPr>
-        <w:t>Se realiza medicion de presiones en sistema VRV Daikin.</w:t>
-      </w:r>
-    </w:p>
-    <w:p w14:paraId="7E560252" w14:textId="77777777" w:rsidR="00DA3E46" w:rsidRDefault="00FF32BC" w:rsidP="00534B5C">
-      <w:pPr>
-        <w:numPr>
-          <w:ilvl w:val="0"/>
-          <w:numId w:val="14"/>
-        </w:numPr>
-        <w:spacing w:after="0"/>
-        <w:jc w:val="both"/>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-        <w:t>Se realizo recalibración de termostatos por desprogramación.</w:t>
-      </w:r>
-    </w:p>
-    <w:p w14:paraId="44A4124D" w14:textId="77777777" w:rsidR="00B05049" w:rsidRPr="00E957AC" w:rsidRDefault="00FF32BC" w:rsidP="00534B5C">
-      <w:pPr>
-        <w:numPr>
-          <w:ilvl w:val="0"/>
-          <w:numId w:val="14"/>
-        </w:numPr>
-        <w:spacing w:after="0"/>
-        <w:jc w:val="both"/>
-        <w:rPr>
-          <w:noProof/>
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-        <w:t>Se realiza pruebas de enfriamiento con pistola Laser evidenciando capacidad de enfriamiento optima en las diferentes áreas.</w:t>
-      </w:r>
-    </w:p>
+    
+    
+    
+    
+    
     <w:p w14:paraId="655F003E" w14:textId="77777777" w:rsidR="00334243" w:rsidRPr="00E957AC" w:rsidRDefault="00334243" w:rsidP="00534B5C">
       <w:pPr>
         <w:numPr>
@@ -2501,162 +2391,17 @@
       <w:r>
         <w:rPr>
           <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-        <w:t xml:space="preserve">El Datacenter se encuentra operando normalmente equipo No. 2, el equipo No. 1 se encuentra fuera de servicio.  Sin novedad.  </w:t>
-      </w:r>
-      
-      
-      
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
           <w:color w:val="FF0000"/>
           <w:sz w:val="24"/>
           <w:szCs w:val="24"/>
         </w:rPr>
-        <w:t>(ES MUY URGENTE REMPLAZO DEL EQUIPO QUE SE ENCUENTRA FUERA DE SERVICIO.</w:t>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:noProof/>
-          <w:color w:val="FF0000"/>
-        </w:rPr>
-        <w:t>)</w:t>
+        <w:t>{{OBS_ITEM_ROJO}}</w:t>
       </w:r>
     </w:p>
-    <w:p w14:paraId="0899366D" w14:textId="77777777" w:rsidR="007D0675" w:rsidRPr="00E957AC" w:rsidRDefault="007D0675" w:rsidP="00534B5C">
-      <w:pPr>
-        <w:numPr>
-          <w:ilvl w:val="0"/>
-          <w:numId w:val="14"/>
-        </w:numPr>
-        <w:spacing w:after="0"/>
-        <w:jc w:val="both"/>
-        <w:rPr>
-          <w:noProof/>
-          <w:color w:val="FF0000"/>
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-        <w:t xml:space="preserve">Se requiere pegar algunos conductos que por uso y fricción se han despegado.  </w:t>
-      </w:r>
-      
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:color w:val="FF0000"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-        <w:t>(PRIORIZAR ARREGLO DE CONDUCTOS RIESGO DE OFICINAS CON DEFICIENCIA DE SUMINISTRO DE AIRE ACONDICIONADO COMO SE VE EN LAS FOTOS.)</w:t>
-      </w:r>
-    </w:p>
-    <w:p w14:paraId="78C99649" w14:textId="77777777" w:rsidR="00534B5C" w:rsidRPr="00AC5A33" w:rsidRDefault="00534B5C" w:rsidP="00534B5C">
-      <w:pPr>
-        <w:numPr>
-          <w:ilvl w:val="0"/>
-          <w:numId w:val="14"/>
-        </w:numPr>
-        <w:spacing w:after="0"/>
-        <w:jc w:val="both"/>
-        <w:rPr>
-          <w:noProof/>
-          <w:color w:val="FF0000"/>
-          <w:lang w:val="en-US"/>
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-        <w:t>Se encuentran las Unidades condensadoras golpeadas con un alto riesgo de roturas en los serpentines de condensación por golpes y caídas de objetos con punta metálica rígida</w:t>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:color w:val="FF0000"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-        <w:t>.  (SE RECOMIENDA HACER PEINADO DE SERPENTINES DE UNIDADES CONDENSADORAS.)</w:t>
-      </w:r>
-      
-    </w:p>
-    <w:p w14:paraId="6897728B" w14:textId="77777777" w:rsidR="00534B5C" w:rsidRPr="00AC5A33" w:rsidRDefault="00534B5C" w:rsidP="00534B5C">
-      <w:pPr>
-        <w:numPr>
-          <w:ilvl w:val="0"/>
-          <w:numId w:val="14"/>
-        </w:numPr>
-        <w:spacing w:after="0"/>
-        <w:jc w:val="both"/>
-        <w:rPr>
-          <w:noProof/>
-          <w:lang w:val="en-US"/>
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-        <w:t xml:space="preserve">Se encuentran daños por uso de los conductos de A.A. despegados y con cintas levantadas, pero se requiere revisión y levantamiento con un Ductero para determinar los trabajos a ejecutar.  </w:t>
-      </w:r>
-      
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:color w:val="FF0000"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-        <w:t>(PRIORIZAR ESTAS ACTIVIDADES).</w:t>
-      </w:r>
-      
-    </w:p>
-    <w:p w14:paraId="15121A49" w14:textId="77777777" w:rsidR="00AC5A33" w:rsidRPr="007D0675" w:rsidRDefault="00AC5A33" w:rsidP="00534B5C">
-      <w:pPr>
-        <w:numPr>
-          <w:ilvl w:val="0"/>
-          <w:numId w:val="14"/>
-        </w:numPr>
-        <w:spacing w:after="0"/>
-        <w:jc w:val="both"/>
-        <w:rPr>
-          <w:noProof/>
-          <w:lang w:val="en-US"/>
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-        <w:t xml:space="preserve">Se deben remplazar 2 bombas de condensado de unidades internas de 1 vía por daño en operación, de igual manera se recomienda hacer la instalación de los cheques de bloqueo de paso de agua de los drenajes de aguas lluvias.  </w:t>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow"/>
-          <w:color w:val="FF0000"/>
-          <w:sz w:val="24"/>
-          <w:szCs w:val="24"/>
-        </w:rPr>
-        <w:t>(Puede evitar emergencias de operación en equipos.)</w:t>
-      </w:r>
-      
-      
-    </w:p>
+    
+    
+    
+    
     <w:p w14:paraId="7287298C" w14:textId="77777777" w:rsidR="007D0675" w:rsidRPr="00FF32BC" w:rsidRDefault="007D0675" w:rsidP="00534B5C">
       <w:pPr>
         <w:spacing w:after="0"/>

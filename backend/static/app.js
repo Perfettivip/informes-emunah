@@ -272,6 +272,10 @@ async function cargar() {
           <label>Fecha de la visita</label>
           <input type="date" id="fecha_iso" value="${hoyIso}" required>
         </div>
+        <div class="campo">
+          <label>Ciudad del servicio</label>
+          <input type="text" id="ciudad" placeholder="Ej: Bogotá, Sabaneta, Barranquilla" required>
+        </div>
         
         <!-- ESTE ES EL NUEVO SELECTOR PRINCIPAL PARA LOS TÉCNICOS -->
         <div class="campo" style="margin-top: 15px; border: 2px solid var(--azul); padding: 10px; border-radius: 8px; background: var(--azul-claro);">
@@ -302,6 +306,19 @@ async function cargar() {
   }
 
   html += `
+      <fieldset>
+        <legend>Observaciones (opcional)</legend>
+        <div class="campo">
+          <label>Observaciones generales — una por línea</label>
+          <textarea id="observaciones" rows="4" placeholder="Ej: Limpieza y revisión de bandeja de condensados."></textarea>
+        </div>
+        <div class="campo">
+          <label style="color: #C0392B;">Novedades urgentes (salen en rojo) — una por línea</label>
+          <textarea id="observaciones_rojo" rows="3" placeholder="Ej: Se deben reemplazar 2 bombas de condensado."></textarea>
+        </div>
+        <small>Si dejas ambas vacías, el informe sale sin la sección de observaciones.</small>
+      </fieldset>
+
       <fieldset>
         <legend>Consumo de gas refrigerante</legend>
         <div class="campo">
@@ -385,10 +402,12 @@ async function enviar(data) {
   const contacto = document.getElementById("contacto").value.trim();
   const cargo = document.getElementById("cargo_contacto").value.trim();
   const tipoReparacion = document.getElementById("tipo_reparacion").value;
+  const ciudad = document.getElementById("ciudad").value.trim();
   
   if (!fechaIso) { alert("Falta la fecha de la visita"); return; }
   if (!empresa) { alert("Falta el nombre de la empresa"); return; }
   if (!contacto || !cargo) { alert("Falta el contacto o su cargo"); return; }
+  if (!ciudad) { alert("Falta la ciudad del servicio"); return; }
 
   // 1. Extraemos los textos automáticos según la selección del técnico
   const textos = PERFILES_REPARACION[tipoReparacion];
@@ -402,6 +421,9 @@ async function enviar(data) {
   fd.append("mes_ref", mesRef(fechaIso));
   fd.append("parrafo_intro", textos.intro || document.getElementById("parrafo_intro").value);
   fd.append("tipo_reparacion", tipoReparacion);
+  fd.append("ciudad", ciudad);
+  fd.append("observaciones", document.getElementById("observaciones").value);
+  fd.append("observaciones_rojo", document.getElementById("observaciones_rojo").value);
   
   // 2. Inyectamos silenciosamente las observaciones y trabajos
   fd.append("obs1", textos.obs1 || "");

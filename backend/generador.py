@@ -4,6 +4,7 @@ template_unpacked/ reemplazando marcadores de texto y las 17 fotos.
 Es la misma lógica de PLANTILLA_INFORME/generar_informe.py pero como módulo
 importable (sin CLI) para que la use el backend web (main.py).
 """
+import re
 import shutil
 import subprocess
 import sys
@@ -46,8 +47,39 @@ def validar_config(cfg: dict):
         raise GeneradorError(f"Los campos 'n' de las fotos deben ser 1..17, llegaron: {nums}")
 
 
+def _repetir_parrafo(text: str, token: str, items: list) -> str:
+    """El párrafo que contiene {{token}} se repite una vez por cada item
+    (conserva viñeta y formato). Sin items, el párrafo se elimina."""
+    placeholder = "{{%s}}" % token
+    m = re.search(r"<w:p [^>]*>(?:(?!</w:p>).)*?%s.*?</w:p>" % re.escape(placeholder), text, re.S)
+    if not m:
+        raise GeneradorError(f"Marcador no encontrado en la plantilla: {placeholder}")
+    modelo = re.sub(r' w14:(paraId|textId)="[^"]*"', "", m.group(0))  # ids únicos por párrafo
+    nuevos = "".join(modelo.replace(placeholder, escape(item)) for item in items)
+    return text[:m.start()] + nuevos + text[m.end():]
+
+
 def _apply_placeholders(xml_path: Path, cfg: dict):
     text = xml_path.read_text(encoding="utf-8")
+
+    # Observaciones opcionales: lista normal y lista en rojo (novedades urgentes)
+    obs = [o for o in cfg.get("observaciones", []) if o.strip()]
+    obs_rojo = [o for o in cfg.get("observaciones_rojo", []) if o.strip()]
+    text = _repetir_parrafo(text, "OBS_ITEM", obs)
+    text = _repetir_parrafo(text, "OBS_ITEM_ROJO", obs_rojo)
+    if obs or obs_rojo:
+        text = text.replace("{{OBS_TITULO}}", "OBSERVACIONES")
+    else:
+        # Sin observaciones se quita el título y los renglones en blanco que lo
+        # separan de "TRABAJOS POR REALIZAR", para no dejar media página vacía.
+        m = re.search(r"<w:p [^>]*>(?:(?!</w:p>).)*?\{\{OBS_TITULO\}\}.*?</w:p>", text, re.S)
+        if not m:
+            raise GeneradorError("Marcador no encontrado en la plantilla: {{OBS_TITULO}}")
+        fin = m.end()
+        vacio = re.compile(r"\s*<w:p [^>]*>(?:(?!</w:p>|<w:t[ >]|<w:drawing|<w:br).)*</w:p>", re.S)
+        while (v := vacio.match(text, fin)):
+            fin = v.end()
+        text = text[:m.start()] + text[fin:]
 
     def sub(token, value):
         nonlocal text
