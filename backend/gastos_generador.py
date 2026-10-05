@@ -6,9 +6,13 @@ cédula, teléfono, valor) que el conductor diligenció en el formulario web, y
 arma un libro de Excel con esa información, subtotales por tipo de gasto y
 el saldo final frente al anticipo.
 """
+import re
+from datetime import datetime
+from io import BytesIO
 from pathlib import Path
+from typing import Optional
 
-from openpyxl import Workbook
+from openpyxl import Workbook, load_workbook
 from openpyxl.drawing.image import Image as XLImage
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
@@ -57,14 +61,24 @@ def _fila_dato(ws, fila, etiqueta1, valor1, etiqueta2="", valor2=""):
 
 def generar_gastos(cfg: dict, out_path: Path):
     """cfg: dict con los datos generales del viaje y cfg['gastos'] = lista de dicts
-    con las llaves tipo, ciudad, tercero, cedula, telefono, detalle, valor."""
-    gastos = cfg.get("gastos") or []
-    if not gastos:
+    con las llaves tipo, ciudad, tercero, cedula, telefono, detalle, valor.
+    Genera el .xlsx de ESTE viaje (el que se adjunta al correo)."""
+    if not (cfg.get("gastos") or []):
         raise GeneradorError("No se agregó ningún gasto")
 
     wb = Workbook()
     ws = wb.active
     ws.title = "Gastos en carretera"
+    _escribir_relacion(ws, cfg)
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    wb.save(out_path)
+
+
+def _escribir_relacion(ws, cfg: dict) -> dict:
+    """Escribe la relación de gastos de un viaje en la hoja ws (logo, datos,
+    tabla, subtotales y saldo). Devuelve los totales para el resumen del mes."""
+    gastos = cfg.get("gastos") or []
     for col, ancho in zip("ABCDEFG", [20, 22, 16, 22, 16, 24, 16]):
         ws.column_dimensions[col].width = ancho
 
@@ -174,6 +188,74 @@ def generar_gastos(cfg: dict, out_path: Path):
         _fmt_moneda(cs)
 
     ws.freeze_panes = f"A{fila_encabezado_tabla + 1}"
+    return {"total": total_gastos, "anticipo": anticipo, "saldo": saldo}
 
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    wb.save(out_path)
+
+# ---------------------------------------------------------------------------
+# Archivo MENSUAL: un .xlsx por mes, una pestaña por cada relación enviada
+# ---------------------------------------------------------------------------
+
+HOJA_RESUMEN = "Resumen"
+COLS_RESUMEN = ["Pestaña", "Registrado", "Placa", "Conductor", "Fecha inicio", "Fecha fin",
+                "Origen", "Destino", "Total gastos", "Anticipo", "Saldo (+conductor / −empresa)"]
+
+
+def _nombre_pestana(wb, placa: str, ahora: datetime) -> str:
+    """'SZX996 05-10 1430'; si ya existe (mismo minuto) agrega ' (2)', ' (3)'..."""
+    placa = re.sub(r"[\[\]:*?/\\]", "", (placa or "SIN PLACA").strip().upper())[:10]
+    base = f"{placa} {ahora:%d-%m %H%M}"
+    nombre, n = base, 2
+    while nombre in wb.sheetnames:
+        nombre = f"{base} ({n})"
+        n += 1
+    return nombre[:31]
+
+
+def _hoja_resumen(wb):
+    if HOJA_RESUMEN in wb.sheetnames:
+        return wb[HOJA_RESUMEN]
+    ws = wb.create_sheet(HOJA_RESUMEN, 0)
+    for i, (titulo, ancho) in enumerate(zip(COLS_RESUMEN, [20, 17, 10, 24, 12, 12, 16, 16, 15, 15, 28]), start=1):
+        c = ws.cell(row=1, column=i, value=titulo)
+        c.font = Font(bold=True, color="FFFFFF", size=10)
+        c.fill = PatternFill("solid", fgColor=AZUL)
+        c.alignment = Alignment(horizontal="center")
+        ws.column_dimensions[get_column_letter(i)].width = ancho
+    ws.freeze_panes = "A2"
+    return ws
+
+
+def agregar_pestana_mensual(cfg: dict, contenido: Optional[bytes], ahora: datetime):
+    """Abre el archivo del mes (contenido = bytes del .xlsx, o None si es el
+    primer registro del mes), le agrega una pestaña nueva con la relación de
+    este viaje y una fila en 'Resumen'. Devuelve (bytes del archivo, pestaña)."""
+    if not (cfg.get("gastos") or []):
+        raise GeneradorError("No se agregó ningún gasto")
+
+    if contenido:
+        wb = load_workbook(BytesIO(contenido))
+    else:
+        wb = Workbook()
+        wb.remove(wb.active)
+
+    resumen = _hoja_resumen(wb)
+    nombre = _nombre_pestana(wb, cfg.get("placa", ""), ahora)
+    ws = wb.create_sheet(nombre)
+    tot = _escribir_relacion(ws, cfg)
+
+    fila = resumen.max_row + 1
+    valores = [nombre, ahora.strftime("%Y-%m-%d %H:%M"), cfg.get("placa", ""), cfg.get("conductor", ""),
+               cfg.get("fecha_inicio", ""), cfg.get("fecha_fin", ""), cfg.get("origen", ""),
+               cfg.get("destino", ""), tot["total"], tot["anticipo"], tot["saldo"]]
+    for col, val in enumerate(valores, start=1):
+        c = resumen.cell(row=fila, column=col, value=val)
+        c.border = _borde_fino()
+        if col >= 9:
+            _fmt_moneda(c)
+    enlace = resumen.cell(row=fila, column=1)
+    enlace.hyperlink = f"#'{nombre}'!A1"   # clic en el nombre lleva a la pestaña
+    enlace.font = Font(color=AZUL, underline="single")
+
+    salida = BytesIO()
+    wb.save(salida)   # un solo guardado: con logos cargados, guardar dos veces falla
+    return salida.getvalue(), nombre

@@ -312,6 +312,15 @@ async function enviar() {
           <br>Avisa a tu supervisor: ${escapeHtml(json.error_envio || "")}
         </div>`;
     }
+    if (json.consolidado) {
+      resultado.innerHTML += `<div class="resultado ok">📒 Agregado al archivo del mes "${escapeHtml(json.consolidado.archivo)}", pestaña ${escapeHtml(json.consolidado.pestana)}.</div>`;
+    } else if (json.error_consolidado) {
+      resultado.innerHTML += `
+        <div class="resultado error">
+          No se pudo agregar al archivo del mes.
+          <br>Avisa a tu supervisor: ${escapeHtml(json.error_consolidado)}
+        </div>`;
+    }
   } catch (e) {
     resultado.innerHTML = `<div class="resultado error">${escapeHtml(e.message)}</div>`;
   } finally {

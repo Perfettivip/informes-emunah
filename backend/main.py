@@ -33,6 +33,7 @@ from pydantic import BaseModel
 import catalogo
 import db
 import flota
+import gastos_mensual
 import inventario
 import mailer
 import whatsapp
@@ -297,11 +298,21 @@ def crear_gastos(payload: GastosPayload):
     except mailer.MailerError as e:
         error_envio = str(e)
 
+    # Archivo del mes ("Gastos carretera AAAA-MM.xlsx"): una pestaña nueva por relación
+    consolidado = None
+    error_consolidado = None
+    try:
+        consolidado = gastos_mensual.registrar(cfg)
+    except Exception as e:  # el Excel del viaje y el correo ya salieron; no tumbar la respuesta
+        error_consolidado = str(e)
+
     return JSONResponse({
         "ok": True,
         "filename": filename,
         "enviado_por_correo": enviado,
         "error_envio": error_envio,
+        "consolidado": consolidado,
+        "error_consolidado": error_consolidado,
         "download_url": f"/api/download-gastos/{filename}",
     })
 
