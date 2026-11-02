@@ -1,0 +1,345 @@
+{
+  "_leame": "Configuración del generador de Documentos Soporte (DS) para World Office. Todo lo marcado con VERIFICAR debe confirmarlo el contador o revisarse contra la plantilla real de World Office antes de importar.",
+  "empresa": {
+    "nombre_en_world_office": "EMUNAH SAS",
+    "_nombre_nota": "VERIFICAR: debe escribirse EXACTAMENTE como aparece la empresa en World Office."
+  },
+  "documento": {
+    "tipo_documento": "DS",
+    "prefijo": "DS",
+    "consecutivo_inicial": 1,
+    "forma_pago": "Contado",
+    "_forma_pago_nota": "VERIFICAR: nombre exacto de la forma de pago de contado creada en World Office.",
+    "tercero_interno": "",
+    "_tercero_interno_nota": "Identificación del empleado/vendedor interno que World Office pide en el encabezado. Si su plantilla no lo exige, déjelo vacío.",
+    "nota_encabezado": "Documento soporte en adquisiciones a no obligados a facturar",
+    "agrupar_por": [
+      "nit",
+      "fecha"
+    ],
+    "_agrupar_nota": "Filas de la base con el mismo NIT y la misma fecha quedan en UN solo documento soporte. Use [\"fila\"] para un documento por fila, o [\"nit\"] para un documento por tercero en todo el período.",
+    "fecha_formato_salida": "%d/%m/%Y"
+  },
+  "modo_salida": "contable",
+  "_modo_nota": "contable = el programa arma los débitos/créditos (gasto, retenciones, cuenta por pagar). inventario = el programa sólo pone producto/servicio, cantidad y valor y World Office calcula impuestos según la configuración del producto y del tercero.",
+  "tributario": {
+    "uvt": 52374,
+    "_uvt_fuente": "UVT 2026 = $52.374, Resolución DIAN 000238 del 15-dic-2025. Cambiar cada año.",
+    "redondeo": 0,
+    "_redondeo_nota": "Decimales de redondeo de las retenciones (0 = al peso).",
+    "reteiva_porcentaje": 0.15,
+    "reteica_por_mil": 0,
+    "_reteica_nota": "VERIFICAR: tarifa de ReteICA del municipio, por mil (ej. 9.66). 0 = no se practica ReteICA.",
+    "reteica_base_uvt": 0,
+    "fecha_corte_bases": "2026-07-01",
+    "_tarifas_nota": "Configuración actual pedida por la empresa: servicios 4 % y transporte 1 %, sin importar si la persona es declarante. Bases mínimas según Decreto 572 de 2025 (2 UVT para servicios y transporte de carga). VERIFICAR con el contador.",
+    "_iva_nota": "Proveedores: personas naturales NO responsables de IVA, por eso no se calcula IVA ni ReteIVA. Si la base trae una columna IVA con valor, el programa lo marca como advertencia.",
+    "calcular_iva": false
+  },
+  "cuentas": {
+    "contrapartida_pago": "110505",
+    "_contrapartida_nota": "Pago de contado/efectivo: el neto a pagar se acredita a Caja general (110505). Si algún día se paga a crédito, cambie a una cuenta por pagar (ej. 233595).",
+    "retefuente_por_pagar_default": "236525",
+    "reteiva_por_pagar": "236701",
+    "reteica_por_pagar": "236801",
+    "iva_descontable": "240810",
+    "_nota": "Cuentas PUC de referencia (Decreto 2650 de 1993). VERIFICAR contra el plan de cuentas real de la empresa en World Office."
+  },
+  "conceptos": [
+    {
+      "codigo": "SERV",
+      "nombre": "Servicios en general",
+      "palabras_clave": [
+        "servicio",
+        "mantenimiento",
+        "reparacion",
+        "instalacion",
+        "aseo",
+        "limpieza",
+        "mano de obra",
+        "soldadura",
+        "pintura",
+        "montaje"
+      ],
+      "cuenta_gasto": "513595",
+      "cuenta_retefuente": "236525",
+      "producto_world_office": "SERV001",
+      "base_uvt": 2,
+      "tarifa_declarante": 0.04,
+      "tarifa_no_declarante": 0.04
+    },
+    {
+      "codigo": "TRANS",
+      "nombre": "Transporte",
+      "palabras_clave": [
+        "flete",
+        "acarreo",
+        "transporte",
+        "trasteo",
+        "envio",
+        "taxi",
+        "pasaje",
+        "carrera",
+        "domicilio",
+        "mensajeria"
+      ],
+      "cuenta_gasto": "514550",
+      "cuenta_retefuente": "236525",
+      "producto_world_office": "TRA001",
+      "base_uvt": 2,
+      "tarifa_declarante": 0.01,
+      "tarifa_no_declarante": 0.01
+    }
+  ],
+  "concepto_por_defecto": "",
+  "_concepto_por_defecto_nota": "Si se deja vacío, las filas que no se puedan clasificar quedan en la hoja ERRORES para revisión manual (recomendado). Si pone un código (ej. SERV), se usan ese concepto y una advertencia.",
+  "base_terceros": {
+    "_nota": "Nombres posibles de las columnas en el Excel/CSV que usted entrega. El programa compara sin tildes, sin mayúsculas y sin espacios extra. Agregue sinónimos si su base usa otros nombres.",
+    "hoja": "",
+    "columnas": {
+      "nit": [
+        "nit",
+        "identificacion",
+        "cedula",
+        "cc",
+        "documento",
+        "numero documento",
+        "no identificacion",
+        "nit/cc"
+      ],
+      "dv": [
+        "dv",
+        "digito verificacion",
+        "digito de verificacion"
+      ],
+      "tipo_id": [
+        "tipo id",
+        "tipo identificacion",
+        "tipo documento identidad",
+        "tipo doc"
+      ],
+      "nombre": [
+        "nombre",
+        "razon social",
+        "tercero",
+        "proveedor",
+        "nombre completo",
+        "beneficiario"
+      ],
+      "direccion": [
+        "direccion"
+      ],
+      "ciudad": [
+        "ciudad",
+        "municipio"
+      ],
+      "telefono": [
+        "telefono",
+        "celular",
+        "tel"
+      ],
+      "email": [
+        "email",
+        "correo",
+        "correo electronico",
+        "e-mail"
+      ],
+      "declarante": [
+        "declarante",
+        "declara renta",
+        "es declarante"
+      ],
+      "fecha": [
+        "fecha",
+        "fecha operacion",
+        "fecha transaccion",
+        "fecha pago"
+      ],
+      "concepto": [
+        "concepto",
+        "codigo concepto",
+        "tipo gasto",
+        "clasificacion"
+      ],
+      "descripcion": [
+        "descripcion",
+        "detalle",
+        "observacion",
+        "nota",
+        "bien o servicio"
+      ],
+      "cantidad": [
+        "cantidad",
+        "cant"
+      ],
+      "valor": [
+        "valor",
+        "valor total",
+        "total",
+        "monto",
+        "valor pagado",
+        "subtotal",
+        "valor operacion"
+      ],
+      "iva": [
+        "iva",
+        "valor iva"
+      ],
+      "centro_costos": [
+        "centro costos",
+        "centro de costos",
+        "cc costos",
+        "proyecto"
+      ]
+    }
+  },
+  "plantilla_world_office": {
+    "_nota": "VERIFICAR: nombres de columna de la plantilla de importación de documentos de World Office. NO se pudieron confirmar en línea; son una referencia. Si ejecuta el programa con --plantilla <archivo descargado de World Office>, el programa lee los encabezados reales, empata cada campo por nombre aproximado y le avisa los que no encuentre.",
+    "fila_encabezados": 1,
+    "encabezado": {
+      "empresa": "Encab: Empresa",
+      "tipo_documento": "Encab: Tipo Documento",
+      "prefijo": "Encab: Prefijo",
+      "numero": "Encab: Documento Número",
+      "fecha": "Encab: Fecha",
+      "tercero_interno": "Encab: Tercero Interno",
+      "tercero_externo": "Encab: Tercero Externo",
+      "nota": "Encab: Nota",
+      "forma_pago": "Encab: FormaPago",
+      "verificado": "Encab: Verificado",
+      "anulado": "Encab: Anulado"
+    },
+    "detalle_contable": {
+      "cuenta": "Detalle Con: Cuenta Contable",
+      "nota": "Detalle Con: Nota",
+      "tercero": "Detalle Con: Tercero Externo",
+      "debito": "Detalle Con: Débito",
+      "credito": "Detalle Con: Crédito",
+      "base": "Detalle Con: Base",
+      "centro_costos": "Detalle Con: Centro Costos",
+      "vencimiento": "Detalle Con: Vencimiento"
+    },
+    "detalle_inventario": {
+      "producto": "Detalle: Producto",
+      "bodega": "Detalle: Bodega",
+      "unidad_medida": "Detalle: UnidadDeMedida",
+      "cantidad": "Detalle: Cantidad",
+      "iva": "Detalle: IVA",
+      "valor_unitario": "Detalle: Valor Unitario",
+      "descuento": "Detalle: Descuento",
+      "vencimiento": "Detalle: Vencimiento",
+      "nota": "Detalle: Nota",
+      "centro_costos": "Detalle: Centro costos"
+    },
+    "valores_fijos_inventario": {
+      "bodega": "Principal",
+      "unidad_medida": "Und."
+    }
+  },
+  "plantilla_terceros_world_office": {
+    "_nota": "VERIFICAR contra la plantilla de importación de Terceros de World Office. Sirve para crear primero en World Office los proveedores que aún no existen.",
+    "columnas": {
+      "tipo_id": "Tipo Identificación",
+      "nit": "Identificación",
+      "dv": "Dígito Verificación",
+      "nombre": "Nombre Completo",
+      "direccion": "Dirección",
+      "ciudad": "Ciudad",
+      "telefono": "Teléfono",
+      "email": "Email"
+    }
+  },
+  "conceptos_inactivos": [
+    {
+      "codigo": "HON",
+      "nombre": "Honorarios",
+      "palabras_clave": [
+        "honorario",
+        "asesoria",
+        "consultoria",
+        "abogado",
+        "contador",
+        "diseno",
+        "profesional"
+      ],
+      "cuenta_gasto": "511095",
+      "cuenta_retefuente": "236515",
+      "producto_world_office": "HON001",
+      "base_uvt": 0,
+      "tarifa_declarante": 0.1,
+      "tarifa_no_declarante": 0.11
+    },
+    {
+      "codigo": "ARR",
+      "nombre": "Arrendamiento de inmuebles",
+      "palabras_clave": [
+        "arriendo",
+        "arrendamiento",
+        "canon",
+        "alquiler local",
+        "alquiler bodega"
+      ],
+      "cuenta_gasto": "512010",
+      "cuenta_retefuente": "236530",
+      "producto_world_office": "ARR001",
+      "base_uvt": 10,
+      "tarifa_declarante": 0.035,
+      "tarifa_no_declarante": 0.035
+    },
+    {
+      "codigo": "TRANSP",
+      "nombre": "Transporte de pasajeros",
+      "palabras_clave": [
+        "taxi",
+        "pasaje",
+        "transporte de pasajeros",
+        "bus",
+        "carrera"
+      ],
+      "cuenta_gasto": "515515",
+      "cuenta_retefuente": "236525",
+      "producto_world_office": "TRA002",
+      "base_uvt": 10,
+      "tarifa_declarante": 0.035,
+      "tarifa_no_declarante": 0.035
+    },
+    {
+      "codigo": "COMP",
+      "nombre": "Compras generales",
+      "palabras_clave": [
+        "compra",
+        "material",
+        "repuesto",
+        "insumo",
+        "herramienta",
+        "producto",
+        "suministro"
+      ],
+      "cuenta_gasto": "519595",
+      "cuenta_retefuente": "236540",
+      "producto_world_office": "COM001",
+      "base_uvt": 10,
+      "tarifa_declarante": 0.025,
+      "tarifa_no_declarante": 0.035
+    },
+    {
+      "codigo": "AGRO",
+      "nombre": "Compras de productos agrícolas o pecuarios sin procesamiento",
+      "palabras_clave": [
+        "agricola",
+        "pecuario",
+        "ganado",
+        "cosecha",
+        "fruta",
+        "verdura"
+      ],
+      "cuenta_gasto": "519595",
+      "cuenta_retefuente": "236540",
+      "producto_world_office": "AGR001",
+      "base_uvt": 70,
+      "tarifa_declarante": 0.015,
+      "tarifa_no_declarante": 0.015
+    }
+  ],
+  "_conceptos_inactivos_nota": "Conceptos de referencia que NO se usan hoy. Para activar uno, muévalo a la lista \"conceptos\" y confirme tarifa y base con el contador."
+}
