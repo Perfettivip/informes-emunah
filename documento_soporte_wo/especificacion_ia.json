@@ -1,0 +1,181 @@
+{
+  "nombre": "Generador de Documentos Soporte (DS) para World Office",
+  "version": "1.0.0",
+  "fecha_actualizacion": "2026-11-02",
+  "idioma": "es-CO",
+
+  "instrucciones_para_la_ia": [
+    "Eres un asistente contable-programador. Tu tarea es convertir una BASE DE TERCEROS/OPERACIONES (Excel o CSV) en un archivo Excel listo para importar en World Office como Documentos Soporte (tipo de documento DS).",
+    "Si tienes acceso a una terminal con Python 3.9+ y te entregan los archivos generar_ds.py y config.json: ejecútalos tal como se indica en 'ejecucion'. NO reescribas el programa.",
+    "Si NO tienes los archivos, o no puedes ejecutar código: construye un programa equivalente siguiendo EXACTAMENTE 'entradas', 'algoritmo', 'reglas_tributarias', 'salidas' y 'validaciones'. Usa los valores de 'configuracion_vigente'. Luego verifica tu programa con 'pruebas_de_aceptacion'.",
+    "Si no puedes ejecutar código de ninguna forma: procesa la base manualmente aplicando el mismo algoritmo y entrega las tablas de las hojas IMPORTAR_WO, CONTROL y ERRORES.",
+    "Nunca inventes tarifas, cuentas ni nombres de columnas. Usa sólo los de 'configuracion_vigente' o los que te dé el usuario. Si falta un dato, pregúntalo o márcalo en ERRORES.",
+    "Nunca descartes una fila en silencio: cada fila de la base debe terminar en un documento (hoja CONTROL) o en la hoja ERRORES.",
+    "Al terminar, muestra al usuario: cantidad de documentos, rango de numeración, total base, total retención, total neto, número de errores y advertencias."
+  ],
+
+  "contexto_normativo": {
+    "documento": "Documento soporte en adquisiciones efectuadas a sujetos no obligados a expedir factura de venta o documento equivalente.",
+    "normas": [
+      "Estatuto Tributario, artículo 771-2",
+      "Decreto 1625 de 2016, artículo 1.6.1.4.12",
+      "Resolución DIAN 000167 de 2021 (modificada por la Resolución DIAN 000488 de 2022)",
+      "Decreto 572 de 2025 (bases y tarifas de retención en la fuente)",
+      "Resolución DIAN 000238 de 2025 (UVT 2026 = $52.374)"
+    ],
+    "advertencia": "Este programa prepara el archivo de importación. La transmisión electrónica del DS a la DIAN la hace World Office con su proveedor tecnológico después de importar, según la configuración de cada empresa. Tarifas, bases y cuentas deben ser confirmadas por el contador."
+  },
+
+  "ejecucion": {
+    "requisitos": ["Python 3.9 o superior", "pip install openpyxl"],
+    "comando_basico": "python generar_ds.py RUTA_BASE.xlsx",
+    "comando_completo": "python generar_ds.py RUTA_BASE.xlsx --plantilla PLANTILLA_WORLD_OFFICE.xlsx --consecutivo 120 --salida DS_noviembre.xlsx",
+    "parametros": {
+      "base": "Obligatorio. Archivo .xlsx, .xlsm o .csv (separado por ; , o tabulador).",
+      "--plantilla": "Recomendado. Plantilla de importación de documentos descargada del propio World Office. El programa copia sus encabezados reales y en el mismo orden.",
+      "--consecutivo": "Primer número de DS. Debe ser el siguiente número libre del DS en World Office.",
+      "--salida": "Nombre del Excel resultante.",
+      "--modo": "contable | inventario (sobrescribe config.json).",
+      "--config": "Otra configuración (por defecto config.json junto al programa).",
+      "--hoja": "Hoja de la base a leer (por defecto la primera)."
+    },
+    "codigo_salida": {"0": "sin errores", "2": "hay filas con error (ver hoja ERRORES); las demás sí se generaron"}
+  },
+
+  "entradas": {
+    "base_terceros": {
+      "descripcion": "Una fila por pago u operación. Los encabezados pueden tener cualquier nombre de la lista de sinónimos; se comparan sin tildes, mayúsculas ni signos.",
+      "columnas": {
+        "nit":           {"obligatoria": true,  "sinonimos": ["nit", "identificacion", "cedula", "cc", "documento", "numero documento", "nit/cc"], "nota": "Acepta 79.456.123, 900123456-1, etc. Se dejan sólo dígitos; lo que va después del guion se toma como DV."},
+        "valor":         {"obligatoria": true,  "sinonimos": ["valor", "valor total", "total", "monto", "valor pagado", "subtotal"], "nota": "Acepta $ 1.250.000 / 1,250,000.50 / 1250000."},
+        "nombre":        {"obligatoria": false, "sinonimos": ["nombre", "razon social", "tercero", "proveedor", "beneficiario"]},
+        "fecha":         {"obligatoria": false, "sinonimos": ["fecha", "fecha operacion", "fecha pago"], "nota": "dd/mm/aaaa, aaaa-mm-dd o fecha de Excel. Si no hay columna, se usa la fecha de hoy."},
+        "concepto":      {"obligatoria": false, "sinonimos": ["concepto", "codigo concepto", "tipo gasto"], "nota": "Código (SERV, TRANS) o nombre del concepto. Si falta, se clasifica por palabras clave de la descripción."},
+        "descripcion":   {"obligatoria": false, "sinonimos": ["descripcion", "detalle", "observacion", "bien o servicio"]},
+        "declarante":    {"obligatoria": false, "sinonimos": ["declarante", "declara renta"], "nota": "si/no. Sólo cambia la tarifa si el concepto tiene tarifas distintas."},
+        "dv":            {"obligatoria": false},
+        "tipo_id":       {"obligatoria": false},
+        "cantidad":      {"obligatoria": false, "nota": "Por defecto 1."},
+        "iva":           {"obligatoria": false, "nota": "Con la configuración vigente se ignora (proveedores no responsables de IVA) y se avisa."},
+        "direccion":     {"obligatoria": false},
+        "ciudad":        {"obligatoria": false},
+        "telefono":      {"obligatoria": false},
+        "email":         {"obligatoria": false},
+        "centro_costos": {"obligatoria": false}
+      }
+    },
+    "plantilla_world_office": "Opcional pero recomendada: el .xlsx de importación de documentos que entrega World Office. Sus encabezados mandan sobre los de config.json.",
+    "config_json": "Todos los parámetros (empresa, numeración, tarifas, cuentas, nombres de columnas). Ver 'configuracion_vigente'."
+  },
+
+  "configuracion_vigente": {
+    "empresa_world_office": "EMUNAH SAS (VERIFICAR nombre exacto en World Office)",
+    "tipo_documento": "DS",
+    "prefijo": "DS",
+    "forma_pago": "Contado (efectivo)",
+    "proveedores": "Personas naturales NO responsables de IVA: no se calcula IVA ni ReteIVA.",
+    "uvt": 52374,
+    "agrupar_por": ["nit", "fecha"],
+    "modo_salida": "contable",
+    "conceptos": [
+      {"codigo": "SERV",  "nombre": "Servicios en general", "tarifa": 0.04, "base_minima_uvt": 2, "base_minima_pesos": 104748, "cuenta_gasto": "513595", "cuenta_retencion": "236525",
+       "palabras_clave": ["servicio", "mantenimiento", "reparacion", "instalacion", "aseo", "limpieza", "mano de obra", "soldadura", "pintura", "montaje"]},
+      {"codigo": "TRANS", "nombre": "Transporte",           "tarifa": 0.01, "base_minima_uvt": 2, "base_minima_pesos": 104748, "cuenta_gasto": "514550", "cuenta_retencion": "236525",
+       "palabras_clave": ["flete", "acarreo", "transporte", "trasteo", "envio", "taxi", "pasaje", "carrera", "domicilio", "mensajeria"]}
+    ],
+    "cuenta_contrapartida_pago": "110505 (Caja general, por pago de contado)",
+    "nota": "Las cuentas son del PUC (Decreto 2650 de 1993) como referencia; VERIFICAR contra el plan de cuentas de la empresa."
+  },
+
+  "algoritmo": [
+    {"paso": 1, "nombre": "Leer la base", "detalle": "Leer la primera hoja (o la indicada). Quitar filas vacías. Primera fila no vacía = encabezados."},
+    {"paso": 2, "nombre": "Detectar columnas", "detalle": "Para cada campo lógico buscar el encabezado igual a algún sinónimo (normalizado). Si no, buscar encabezados que empiecen o terminen con el sinónimo. Si faltan 'nit' o 'valor', detenerse y decir qué columnas se leyeron."},
+    {"paso": 3, "nombre": "Limpiar cada fila", "detalle": "NIT: sólo dígitos, 5 a 15. Calcular DV (ver 'reglas_tributarias.digito_verificacion'); si la base trae otro DV, avisar y usar el calculado. Valor > 0. Fecha válida; fecha futura = advertencia."},
+    {"paso": 4, "nombre": "Clasificar concepto", "detalle": "a) Si la columna concepto coincide con un código o nombre de concepto, usarlo. b) Si no, buscar las palabras clave (al inicio de palabra) en concepto + descripción; gana el concepto con mayor suma de longitudes de palabras encontradas; si hay empate, advertencia. c) Si no hay coincidencia y concepto_por_defecto está vacío: ERROR."},
+    {"paso": 5, "nombre": "Separar errores", "detalle": "Filas con error van sólo a la hoja ERRORES, con el número de fila de la base. Las advertencias no excluyen la fila."},
+    {"paso": 6, "nombre": "Agrupar en documentos", "detalle": "Filas con el mismo NIT y la misma fecha forman un DS (configurable). Numerar consecutivamente desde consecutivo_inicial, en el orden en que aparecen en la base."},
+    {"paso": 7, "nombre": "Calcular retenciones", "detalle": "Por documento y por concepto: base = suma de valores; si base >= base_minima_uvt × UVT, retención = redondear(base × tarifa, 0 decimales, mitad hacia arriba); si no, 0. Neto = subtotal − retenciones."},
+    {"paso": 8, "nombre": "Armar filas de World Office", "detalle": "Ver 'salidas.IMPORTAR_WO'. El encabezado del documento se repite en cada fila de su detalle."},
+    {"paso": 9, "nombre": "Escribir el Excel", "detalle": "Hojas en este orden: IMPORTAR_WO, CONTROL, RESUMEN, TERCEROS_WO, ERRORES."}
+  ],
+
+  "reglas_tributarias": {
+    "retencion_fuente": "retencion = base × tarifa cuando base >= base_minima_uvt × UVT. La base mínima se evalúa sobre el total del documento por concepto.",
+    "redondeo": "Al peso, mitad hacia arriba.",
+    "iva": "No se calcula (proveedores no responsables de IVA).",
+    "reteica": "No se practica con la configuración actual (reteica_por_mil = 0).",
+    "digito_verificacion": {
+      "metodo": "Módulo 11 DIAN",
+      "pesos_de_derecha_a_izquierda": [3, 7, 13, 17, 19, 23, 29, 37, 41, 43, 47, 53, 59, 67, 71],
+      "formula": "s = (suma de dígito_i × peso_i) mod 11; DV = s si s ∈ {0,1}, si no DV = 11 − s",
+      "ejemplo": "800197268 -> 4"
+    }
+  },
+
+  "salidas": {
+    "archivo": "Un .xlsx con 5 hojas.",
+    "IMPORTAR_WO": {
+      "descripcion": "Hoja que se importa en World Office. Si se dio --plantilla, tiene exactamente los encabezados y el orden de esa plantilla; las columnas que el programa no maneja quedan vacías.",
+      "encabezado_repetido_en_cada_fila": {
+        "Encab: Empresa": "nombre de la empresa en World Office",
+        "Encab: Tipo Documento": "DS",
+        "Encab: Prefijo": "DS",
+        "Encab: Documento Número": "consecutivo",
+        "Encab: Fecha": "dd/mm/aaaa",
+        "Encab: Tercero Interno": "config.documento.tercero_interno",
+        "Encab: Tercero Externo": "NIT del proveedor, sin DV",
+        "Encab: Nota": "nota + nombre del proveedor",
+        "Encab: FormaPago": "Contado",
+        "Encab: Verificado": 0,
+        "Encab: Anulado": 0
+      },
+      "detalle_modo_contable": {
+        "filas_por_documento": [
+          "1 fila DÉBITO por cada operación: cuenta_gasto del concepto, nota = descripción, valor",
+          "1 fila CRÉDITO por concepto con retención > 0: cuenta_retencion, nota = 'Retefuente <concepto> <tarifa>%', base",
+          "1 fila CRÉDITO final: cuenta de pago (110505), valor = neto"
+        ],
+        "columnas": ["Detalle Con: Cuenta Contable", "Detalle Con: Nota", "Detalle Con: Tercero Externo", "Detalle Con: Débito", "Detalle Con: Crédito", "Detalle Con: Base", "Detalle Con: Centro Costos", "Detalle Con: Vencimiento"],
+        "control": "Por cada documento: suma de débitos = suma de créditos."
+      },
+      "detalle_modo_inventario": {
+        "filas_por_documento": ["1 fila por operación: código de producto/servicio de World Office, bodega, unidad, cantidad, IVA 0, valor unitario"],
+        "nota": "World Office calcula las retenciones según la configuración del producto y del tercero. Las de CONTROL sirven para comparar."
+      },
+      "advertencia_encabezados": "Los nombres 'Encab: ...' y 'Detalle ...' son una referencia NO confirmada contra la plantilla oficial. Por eso se recomienda --plantilla: con ella el programa empata cada campo con la columna real y avisa en ERRORES lo que no encuentre."
+    },
+    "CONTROL": "Una fila por DS: prefijo, número, fecha, NIT, nombre, conceptos, subtotal, base, tarifa (o 'no aplica (bajo base)'), base mínima, retefuente, neto y filas de la base que lo forman.",
+    "RESUMEN": "Por concepto: número de documentos, base total, retención total; más una fila TOTAL.",
+    "TERCEROS_WO": "Proveedores únicos (tipo id, identificación, DV, nombre, dirección, ciudad, teléfono, email) para crearlos en World Office antes de importar los DS.",
+    "ERRORES": "Fila de la base, tipo (ERROR en rojo = fila excluida / ADVERTENCIA en amarillo = incluida pero revisar), NIT, nombre, detalle. También avisos de la plantilla."
+  },
+
+  "validaciones": [
+    "Toda fila de la base aparece en CONTROL (columna 'Filas base') o en ERRORES.",
+    "En modo contable, débitos = créditos en cada documento.",
+    "Neto = subtotal − retefuente − reteICA (+ IVA − ReteIVA si se activara IVA).",
+    "Ningún NIT inválido o valor ≤ 0 llega a IMPORTAR_WO.",
+    "Los números de DS son consecutivos y sin repetir.",
+    "Una retención sólo existe si la base del documento para ese concepto es >= base mínima."
+  ],
+
+  "pruebas_de_aceptacion": [
+    {"caso": "Servicio sobre la base",  "entrada": {"nit": "79456123", "descripcion": "Mantenimiento aire acondicionado", "valor": 850000, "fecha": "05/10/2026"}, "mas": {"nit": "79456123", "descripcion": "Instalación de tubería", "valor": 300000, "fecha": "05/10/2026"},
+     "esperado": {"documentos": 1, "subtotal": 1150000, "retefuente": 46000, "neto": 1104000, "dv": "2"}},
+    {"caso": "Transporte sobre la base", "entrada": {"nit": "1020304050", "descripcion": "Flete Bogotá - Soacha", "valor": 450000}, "esperado": {"retefuente": 4500, "neto": 445500}},
+    {"caso": "Transporte bajo la base",  "entrada": {"descripcion": "Acarreo de materiales", "valor": 80000}, "esperado": {"retefuente": 0, "tarifa": "no aplica (bajo base)"}},
+    {"caso": "Servicio bajo la base",    "entrada": {"descripcion": "Servicio de aseo oficina", "valor": 95000}, "esperado": {"retefuente": 0}},
+    {"caso": "Sin cédula",               "entrada": {"nit": "", "valor": 200000}, "esperado": {"hoja": "ERRORES", "tipo": "ERROR"}},
+    {"caso": "No clasificable",          "entrada": {"descripcion": "Almuerzo equipo", "valor": 60000}, "esperado": {"hoja": "ERRORES", "tipo": "ERROR"}},
+    {"caso": "DV",                       "entrada": {"nit": "800197268"}, "esperado": {"dv": "4"}}
+  ],
+
+  "archivos_del_paquete": {
+    "generar_ds.py": "Programa en Python (implementación de referencia de esta especificación).",
+    "config.json": "Parámetros editables.",
+    "especificacion_ia.json": "Este archivo.",
+    "LEAME.md": "Instructivo para personas.",
+    "ejemplo/base_terceros_ejemplo.xlsx": "Base de prueba con los casos de 'pruebas_de_aceptacion'.",
+    "ejemplo/DS_WO_ejemplo.xlsx": "Resultado esperado de la base de prueba."
+  }
+}
